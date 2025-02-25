@@ -10,6 +10,7 @@
       <h1 class="logoText">公共出借權登記系統</h1>
       <functionNavigation />
     </v-app-bar>
+    <!-- 桌機版 menu start  -->
     <v-app-bar class="pcMenu bg-primary elevation-0">
       <div class="">
         <v-btn variant="plain" append-icon="mdi-chevron-down">
@@ -76,8 +77,10 @@
         <v-btn variant="plain"> 補償酬金調整管理 </v-btn>
       </div>
     </v-app-bar>
+    <!-- 桌機版 menu end  -->
     <v-main>
       <!-- <v-overlay v-model="overlay" @click="[(rail = !rail)]"> </v-overlay> -->
+      <!-- 手機版 menu start  -->
       <v-navigation-drawer
         v-model="drawer"
         :class="['navDrawer', { hidden: !rail }]"
@@ -224,6 +227,7 @@
           </ul>
         </v-list>
       </v-navigation-drawer>
+      <!-- 手機版 menu end  -->
       <pageView />
     </v-main>
     <v-footer class="footer">
@@ -278,11 +282,6 @@ export default {
     pageView,
   },
   methods: {
-    handleResize() {
-      this.windowWidth = window.innerWidth;
-      this.windowWidth < 991 ? (this.railWidth = 1) : (this.railWidth = 1);
-      this.isSmallScreen = window.innerWidth < 991;
-    },
     menuTarget(newOpened) {
       this.opened = newOpened.slice(-1);
     },
@@ -292,8 +291,6 @@ export default {
   },
   mounted() {
     this.windowWidth = window.innerWidth;
-    // this.handleResize();
-    // window.addEventListener("resize", this.handleResize);
   },
 };
 </script>

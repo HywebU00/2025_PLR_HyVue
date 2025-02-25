@@ -198,6 +198,9 @@
     padding: 0;
     list-style: none;
   }
+  @include screen('tablet') {
+    display: none;
+  }
 }
 //工具列ＣＳＳ設定
 .pcMenu {
@@ -237,6 +240,7 @@
   }
 }
 .v-main {
+  background: #fafafa;
   padding-left: 0 !important;
   @include screen('tablet') {
     padding-top: 64px !important;
@@ -277,7 +281,7 @@ header {
     padding-bottom: 45px;
     span {
       font-size: 1.5rem;
-      background: #fff;
+      background: #fafafa;
       margin-left: 0rem;
       z-index: 2;
       padding-right: 1.5rem;

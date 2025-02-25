@@ -19,7 +19,7 @@ export default createVuetify({
         dark: false,
         colors: {
           primary: "#3a3a3a",
-          secondary: "#32a7fa",
+          secondary: "#dcdcdc",
           loginColor: "#0156a2",
           light: "#8eebb1",
           navText: "#262626",

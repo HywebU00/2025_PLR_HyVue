@@ -3,26 +3,26 @@
     <div class="index_container">
       <div class="index_title">
         <h3 class="text-center">
-          <img style="width: 36px" src="~@/assets/images/logo.png" alt="" /><img
-            style="margin-left: 1rem"
-            src="~@/assets/images/logo.png"
-            alt=""
-          />
-          <p class="text-h5">管理平台樣板</p>
+          <p class="text-h5 font-weight-bold">公共出借權登記系統</p>
         </h3>
-        <v-btn color="secondary"><a href="">檔案下載</a></v-btn>
+        <v-btn color="secondary"
+          ><a
+            href="https://github.com/HywebU00/2025_PLR_HyVue"
+            class="text-primary"
+            >檔案下載</a
+          ></v-btn
+        >
       </div>
-
       <div class="d-flex mb-2 justify-center">
         <div style="width: 75%" class="mt-1">
           <v-card>
             <v-table>
-              <thead class="bg-tHeader">
+              <thead class="bg-primary">
                 <tr>
-                  <th class="text-left">編號</th>
-                  <th class="text-left">頁面名稱</th>
-                  <th class="text-left">連結</th>
-                  <th class="text-left width">備註</th>
+                  <th class="text-left text-white">編號</th>
+                  <th class="text-left text-white">頁面名稱</th>
+                  <th class="text-left text-white">連結</th>
+                  <th class="text-left width text-white">備註</th>
                 </tr>
               </thead>
               <tbody>
@@ -49,32 +49,32 @@ export default {
     return {
       desserts: [
         {
-          name: "首頁",
+          name: "使用者註冊",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/",
+          note: "",
+        },
+        {
+          name: "",
           link: "",
           note: "",
         },
         {
-          name: "功能頁",
+          name: "",
           link: "",
           note: "",
         },
         {
-          name: "新增頁",
+          name: "",
           link: "",
           note: "",
         },
         {
-          name: "fancyBox頁",
+          name: "",
           link: "",
           note: "",
         },
         {
-          name: "相簿頁",
-          link: "",
-          note: "",
-        },
-        {
-          name: "樹狀分類＋功能頁",
+          name: "",
           link: "",
           note: "",
         },

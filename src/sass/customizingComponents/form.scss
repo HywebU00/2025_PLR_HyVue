@@ -1,9 +1,93 @@
 .formGrp {
+  border-bottom: 1px solid #d7d7d7;
+  padding: 0.75rem 0;
   label {
     font-weight: 500;
     margin: 0 0.5rem;
+    font-size: 1rem;
+    .necessary {
+      text-decoration: none;
+      color: #d14b1a;
+    }
+  }
+  .v-field--error:not(.v-field--disabled) .v-label.v-field-label {
+    color: #d14b1a;
+  }
+
+  .v-messages__message {
+    font-size: 1rem;
+    line-height: 1rem;
+    padding-left: 0;
+  }
+  .v-field--error:not(.v-field--disabled) .v-field__outline {
+    color: #d14b1a;
+  }
+  .v-input--error:not(.v-input--disabled) .v-input__details .v-messages {
+    color: #d14b1a;
+  }
+  .v-text-field .v-input__details {
+    padding-left: 0;
   }
 }
 input:-internal-autofill-selected {
   background: #fff !important;
+}
+.v-radio-group {
+  margin-top: -0.5rem;
+  @media screen and (max-width: 1280px) {
+    margin-top: 0rem;
+  }
+}
+.btn {
+  .v-btn__content {
+    font-size: 1.25rem;
+    padding: 0 8px;
+    @include screen('tablet') {
+      font-size: 0.9rem;
+    }
+  }
+}
+.formBtnGrp {
+  margin-top: 3rem;
+}
+.alertText {
+  &.v-alert {
+    padding: 0.35rem;
+    color: #d14b1a;
+    background: transparent;
+    line-height: 1.5rem;
+  }
+}
+.v-checkbox {
+  .linkText {
+    position: relative;
+    color: #000;
+    font-weight: 600;
+    opacity: 1;
+    &::after {
+      position: absolute;
+      width: 100%;
+      height: 1px;
+      background: #000;
+      opacity: 1;
+      bottom: -3px;
+      content: '';
+      left: 0;
+    }
+  }
+}
+.captchaCard {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+  img {
+    @include screen('tablet') {
+      width: 90%;
+    }
+  }
+}
+.formGrp {
+  &:has(.captchaCard) {
+    border-bottom: 0;
+  }
 }
