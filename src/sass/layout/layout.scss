@@ -205,6 +205,8 @@
 //工具列ＣＳＳ設定
 .pcMenu {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+  position: sticky !important;
+  top: 0 !important;
   .v-toolbar__content {
     min-height: rem(72) !important;
     height: unset !important;
@@ -235,13 +237,16 @@
   }
 }
 .nav {
+  position: relative !important;
   @include screen('tablet') {
+    position: fixed !important;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
   }
 }
 .v-main {
   background: #fafafa;
   padding-left: 0 !important;
+  padding-top: 0px !important;
   @include screen('tablet') {
     padding-top: 64px !important;
   }
