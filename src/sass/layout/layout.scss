@@ -198,6 +198,9 @@
     padding: 0;
     list-style: none;
   }
+  .v-btn {
+    font-size: 1rem !important;
+  }
   @include screen('tablet') {
     display: none;
   }
@@ -238,9 +241,15 @@
 }
 .nav {
   position: relative !important;
+  .v-toolbar__content {
+    height: rem(100) !important;
+  }
   @include screen('tablet') {
     position: fixed !important;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
+    .v-toolbar__content {
+      height: rem(64) !important;
+    }
   }
 }
 .v-main {
