@@ -29,11 +29,19 @@
     }
   }
   .navlist {
-    border: 1px solid #dcdcdc;
+    border: 1px solid #45484e;
     color: #fff;
     margin: 0.5rem;
     li {
-      border-bottom: 1px solid #dcdcdc;
+      border-bottom: 1px solid #45484e;
+      button {
+        .v-btn__content {
+          color: #fff;
+        }
+        &.v-btn--variant-plain {
+          opacity: 1;
+        }
+      }
       &:last-child {
         border: none;
       }
@@ -278,6 +286,8 @@
   font-size: 1.75rem;
   @include screen('tablet') {
     margin-left: 0rem;
+    width: 100%;
+    text-align: center;
   }
   @include screen('mobile') {
     font-size: 1.25rem;
