@@ -200,6 +200,16 @@
   }
   .v-btn {
     font-size: 1rem !important;
+    height: rem(47) !important;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem !important;
+    margin-right: 1rem;
+    &:last-child {
+      margin-right: 0;
+    }
+    .v-icon {
+      font-size: 1.5em !important;
+    }
   }
   @include screen('tablet') {
     display: none;
@@ -241,8 +251,12 @@
 }
 .nav {
   position: relative !important;
+
   .v-toolbar__content {
     height: rem(100) !important;
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
   }
   @include screen('tablet') {
     position: fixed !important;
@@ -261,7 +275,6 @@
   }
 }
 .logoText {
-  margin-left: 2rem;
   font-size: 1.75rem;
   @include screen('tablet') {
     margin-left: 0rem;

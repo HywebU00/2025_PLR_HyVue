@@ -1,11 +1,11 @@
 <!-- 桌機版 start-->
 <template>
   <div class="functionList">
-    <v-btn class="mr-1"> 首頁 </v-btn>
+    <v-btn class=""> 首頁 </v-btn>
     <v-btn
       variant="flat"
       color="primary "
-      class="mr-1"
+      class=""
       prepend-icon="mdi-account-outline"
       v-bind="props"
       >登入</v-btn
