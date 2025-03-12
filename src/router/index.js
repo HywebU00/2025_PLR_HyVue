@@ -19,6 +19,18 @@ const routes = [
         component: () => import("@/views/admin/defaultComponent.vue"),
       },
       {
+        path: "check",
+        component: () => import("@/views/admin/checkComponent.vue"),
+      },
+      {
+        path: "search",
+        component: () => import("@/views/admin/searchComponent.vue"),
+      },
+      {
+        path: "register",
+        component: () => import("@/views/admin/registerComponent.vue"),
+      },
+      {
         path: "from",
         component: () => import("@/views/admin/fromComponent.vue"),
       },

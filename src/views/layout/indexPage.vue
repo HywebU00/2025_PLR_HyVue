@@ -54,8 +54,8 @@ export default {
           note: "",
         },
         {
-          name: "",
-          link: "",
+          name: "身份驗證",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/check",
           note: "",
         },
         {

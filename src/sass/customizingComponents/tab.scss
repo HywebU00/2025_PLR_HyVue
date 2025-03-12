@@ -1,0 +1,64 @@
+.tab {
+  .infoList {
+    font-size: 1rem;
+    color: $gray2;
+    li {
+      margin-bottom: 1rem;
+    }
+    + .img {
+      margin-top: 1.5rem;
+      max-width: rem(277);
+    }
+  }
+  .btnGrp {
+    display: flex;
+    flex-direction: column;
+  }
+  .v-tabs {
+    button {
+      background: #ccc;
+      margin-right: 0.25rem;
+      padding: 0 3rem;
+      font-size: 1.1rem;
+      &.v-slide-group-item--active {
+        &::after {
+          border: 0 !important;
+        }
+      }
+      &.v-tab--selected {
+        background: #3a3a3a;
+        color: #fff;
+        .v-tab__slider {
+          opacity: 0;
+        }
+      }
+    }
+    // selector(:focus-visible) {
+    //   .v-btn::after {
+    //     border: 0;
+    //   }
+    // }
+  }
+  .v-card-text {
+    background: #fff;
+    padding: 3rem 2.5rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  }
+  .infoText {
+    font-size: 1.1rem;
+    width: 100%;
+    li {
+      margin-bottom: 0.5rem;
+      display: block;
+    }
+    + .alert {
+      display: block;
+      font-size: 0.9rem;
+    }
+  }
+  .v-col {
+    &:has(.infoText) {
+      flex-wrap: wrap;
+    }
+  }
+}

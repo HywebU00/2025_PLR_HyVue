@@ -7,7 +7,6 @@
       color="primary "
       class=""
       prepend-icon="mdi-account-outline"
-      v-bind="props"
       >登入</v-btn
     >
     <v-btn> 帳號維護 </v-btn>

@@ -6,3 +6,72 @@ table {
     background: #dadfe0;
   }
 }
+.pagination {
+  margin-top: 2rem;
+  .v-input {
+    width: 65px;
+    flex: unset;
+  }
+  .v-input__control {
+    width: 65px;
+  }
+  .v-btn__content {
+    font-size: 1rem;
+  }
+}
+
+.checkTable {
+  thead {
+    text-wrap: nowrap;
+    th {
+      white-space: nowrap;
+      font-size: 1rem;
+      font-weight: bold !important;
+      background-color: $gray3 !important;
+      color: #fff !important;
+    }
+  }
+  tbody {
+    // p {
+    //   margin-bottom: 0;
+    // }
+    // tr:nth-child(even) {
+    //   background-color: #f7f7f5;
+    // }
+  }
+  &.v-table .v-table__wrapper > table tbody tr:not(:last-child) td {
+    border-bottom: 1px solid lighten(#695f5f, 50) !important;
+  }
+  tr {
+    td {
+      padding: 1rem !important;
+      text-align: start !important;
+      > tr {
+      }
+      // &:last-child {
+      //   border-right: 1px solid lighten(#695f5f, 50);
+      // }
+    }
+  }
+  td {
+    border: 1px solid lighten(#695f5f, 50);
+    border-right: 0px;
+    ul {
+      padding: 0.5rem;
+      text-align: start;
+      list-style: none;
+      padding-left: 0;
+    }
+    .v-input {
+      display: flex;
+    }
+  }
+  .v-input__control {
+    width: 100%;
+  }
+  .btnGroup {
+    button {
+      margin: 0 0.25rem;
+    }
+  }
+}

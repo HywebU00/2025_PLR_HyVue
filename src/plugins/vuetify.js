@@ -19,11 +19,12 @@ export default createVuetify({
         dark: false,
         colors: {
           primary: "#3a3a3a",
+          info: "#626060",
           secondary: "#dcdcdc",
           loginColor: "#0156a2",
           light: "#8eebb1",
           navText: "#262626",
-          thead: "#dadfe0",
+          thead: "#dcdcdc",
         },
       },
     },
