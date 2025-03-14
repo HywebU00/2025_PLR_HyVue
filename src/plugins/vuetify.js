@@ -2,13 +2,13 @@
 import "@mdi/font/css/materialdesignicons.css";
 
 import "vuetify/styles";
-
+import "@/sass/settings.scss";
 // Composables
 import { createVuetify } from "vuetify";
 import { aliases, mdi } from "vuetify/iconsets/mdi";
 import { fa } from "vuetify/iconsets/fa4";
 import { md1 } from "vuetify/blueprints";
-// import { VDataTableServer } from "vuetify/labs/VDataTable";
+import { VDataTableServer } from "vuetify/labs/VDataTable";
 export default createVuetify({
   // blueprint: md3,藍圖樣式
   theme: {
@@ -24,13 +24,13 @@ export default createVuetify({
           loginColor: "#0156a2",
           light: "#8eebb1",
           navText: "#262626",
-          thead: "#dcdcdc",
+          thead: "#626060", // "#dcdcdc",
         },
       },
     },
   },
   components: {
-    // VDataTableServer,
+    VDataTableServer,
   },
   icons: {
     defaultSet: "mdi",

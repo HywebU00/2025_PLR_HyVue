@@ -137,8 +137,9 @@
       </v-col>
       <!-- 查詢區塊 end  -->
       <v-col>
+        <checkTable></checkTable>
         <!-- v-table start -->
-        <v-table class="cellTable">
+        <!-- <v-table class="cellTable">
           <thead class="bg-thead">
             <tr>
               <th class="text-center">選擇</th>
@@ -244,17 +245,15 @@
               </tr>
             </template>
           </tbody>
-        </v-table>
+        </v-table> -->
         <!-- v-table end -->
-        <checkTable></checkTable>
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import checkTable from "@/components/checkTable.vue";
-
+import checkTable from "@/components/dataTableServer2.vue";
 export default {
   data: () => ({
     tab: null,

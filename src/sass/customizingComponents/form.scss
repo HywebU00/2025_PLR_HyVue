@@ -123,3 +123,9 @@ input:-internal-autofill-selected {
 .h3 {
   font-size: 1.35rem;
 }
+.filterList {
+  margin-bottom: 1.5rem;
+  .formGrp {
+    border-bottom: 1px solid #d7d7d7;
+  }
+}

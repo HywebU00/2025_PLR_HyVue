@@ -12,3 +12,11 @@
     background: #fafafa;
   }
 }
+.dataTableServer.v-data-table {
+  .v-table__wrapper > table > thead > tr th {
+    background: #dcdcdc;
+  }
+}
+.v-table {
+  background: unset !important;
+}

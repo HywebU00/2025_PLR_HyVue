@@ -59,13 +59,13 @@ export default {
           note: "",
         },
         {
-          name: "",
-          link: "",
+          name: "補償金調整",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/search",
           note: "",
         },
         {
-          name: "",
-          link: "",
+          name: "已登記作品清單",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/register",
           note: "",
         },
         {

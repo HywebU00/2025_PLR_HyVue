@@ -6,17 +6,35 @@
     :items="serverItems"
     :loading="loading"
     item-value="name"
+    class="dataTableServer bookTable"
+    color="primary"
     :items-per-page-text="customItemsPerPageText"
     @update:options="loadItems"
   >
     <template v-slot:item="{ item }">
       <tr>
-        <td class="">{{ item.id }}</td>
-        <td class="">{{ item.name }}</td>
-        <td class="">{{ item.class }}</td>
-        <td class="">{{ item.title }}</td>
-        <td class="">{{ item.password }}</td>
-        <td>{{ item.status }}</td>
+        <td class="">
+          <div class="">
+            <span class="title">ISBN:</span> {{ item.selectable.name.ISBN }}
+            <a href=""><span class="check">查看</span></a>
+          </div>
+          <div class="">
+            <span class="title">書名:</span>{{ item.selectable.name.book }}
+          </div>
+          <div class="">
+            <span class="title">作者:</span>
+            <template
+              v-for="i in item.selectable.name.author"
+              :key="i in item.selectable.name.author"
+            >
+              <span class="name" :class="{ 'text-gray': i.status === false }">
+                {{ i.name }}
+              </span>
+            </template>
+          </div>
+        </td>
+        <td class="">{{ item.selectable.class }}</td>
+        <td class="">{{ item.selectable.status }}</td>
         <td>
           <div class="btnGroup d-flex">
             <v-btn elevation="0" color="primary" size="small" class="mr-1"
@@ -27,33 +45,21 @@
             >
           </div>
         </td>
-        <td class="d-flex justify-center align-center">
-          <v-menu transition="slide-y-transition">
-            <template v-slot:activator="{ props }">
-              <v-btn icon="mdi-cog" class="ma-2" v-bind="props" size="x-small">
-              </v-btn>
-            </template>
-            <v-card class="pa-2">
-              <v-btn
-                size="small"
-                variant="outlined"
-                class="my-1"
-                block
-                color="primary"
-                prepend-icon="mdi-delete"
-                >刪除</v-btn
-              >
-              <v-btn
-                size="small"
-                variant="outlined"
-                class="my-1"
-                block
-                prepend-icon="mdi-pencil"
-                color="primary"
-                >編輯</v-btn
-              >
-            </v-card>
-          </v-menu>
+        <td>
+          <v-btn elevation="0" color="primary" size="small" rounded="md">
+            <v-icon icon="mdi-square-edit-outline"></v-icon>
+          </v-btn>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="8">
+          <div class="d-flex justify-space-between">
+            <div class="tag">累積借閱次數：101次</div>
+            <div class="">
+              <span>送審日期:2025/01/09</span>
+              <span>審核完畢:2025/01/09</span>
+            </div>
+          </div>
         </td>
       </tr>
     </template>
@@ -62,43 +68,45 @@
 <script>
 const desserts = [
   {
-    id: "001",
-    name: "陳小姐",
-    class: "事務科",
-    title: "事務員",
-    password: "2wsx@@(OL>",
+    name: {
+      ISBN: "9789573311478",
+      book: "和小星說童話",
+      // ,陳小美,張小天
+      author: [
+        { name: "王小明", status: true },
+        { name: "陳小美", status: false },
+        { name: "張小天", status: false },
+      ],
+    },
+    class: "大新出版",
     status: "待審",
   },
   {
-    id: "002",
-    name: "王先生",
-    class: "事務科",
-    title: "事務員",
-    password: "2wsx@@(OL>",
+    name: {
+      ISBN: "9789573311478",
+      book: "和小星說童話",
+      // ,陳小美,張小天
+      author: [
+        { name: "王小明", status: true },
+        { name: "陳小美", status: false },
+        { name: "張小天", status: false },
+      ],
+    },
+    class: "大新出版",
     status: "待審",
   },
   {
-    id: "003",
-    name: "陳小姐",
-    class: "事務科",
-    title: "事務員",
-    password: "2wsx@@(OL>",
-    status: "待審",
-  },
-  {
-    id: "004",
-    name: "林先生",
-    class: "事務科",
-    title: "事務員",
-    password: "2wsx@@(OL>",
-    status: "待審",
-  },
-  {
-    id: "005",
-    name: "賴先生",
-    class: "事務科",
-    title: "事務員",
-    password: "2wsx@@(OL>",
+    name: {
+      ISBN: "9789573311478",
+      book: "和小星說童話",
+      // ,陳小美,張小天
+      author: [
+        { name: "王小明", status: true },
+        { name: "陳小美", status: false },
+        { name: "張小天", status: false },
+      ],
+    },
+    class: "大新出版",
     status: "待審",
   },
 ];
@@ -133,28 +141,20 @@ export default {
   data: () => ({
     itemsPerPage: 5,
     headers: [
+      { title: "書目資訊", key: "name", align: "start", sortable: false },
+      { title: "出版品牌", key: "class", align: "start", sortable: false },
+      { title: "審核狀態", key: "status", align: "start", sortable: false },
       {
-        title: "帳號",
-        align: "start",
-        sortable: false,
-        key: "id",
-      },
-      { title: "姓名", key: "name", align: "start", sortable: false },
-      { title: "單位", key: "class", align: "start", sortable: false },
-      { title: "職稱", key: "title", align: "start", sortable: false },
-      { title: "申請時密碼", key: "password", align: "start", sortable: false },
-      { title: "狀態", key: "status", align: "start", sortable: false },
-      {
-        title: "動作",
-        key: "iron",
-        align: "start",
+        title: "補償酬金發放",
+        key: "function",
+        align: "center",
         sortable: false,
         width: 100,
       },
       {
-        title: "功能",
-        key: "function",
-        align: "center",
+        title: "操作",
+        key: "iron",
+        align: "start",
         sortable: false,
         width: 100,
       },
@@ -174,5 +174,6 @@ export default {
       });
     },
   },
+  computed: {},
 };
 </script>

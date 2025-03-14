@@ -336,6 +336,14 @@ header {
       position: absolute;
     }
   }
+  .v-row {
+    &:has(.filterList) {
+      h2 {
+        padding-bottom: 1.25rem;
+      }
+    }
+  }
+
   &.v-container {
     max-width: 1200px !important;
     padding-bottom: rem(50);
@@ -533,5 +541,10 @@ header {
         }
       }
     }
+  }
+}
+.aboveBtn {
+  + .v-breadcrumbs {
+    padding-top: 1rem;
   }
 }

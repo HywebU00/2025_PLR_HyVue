@@ -22,7 +22,6 @@
                 <template v-slot:append>
                   <v-icon icon="mdi-chevron-down" size="x-small"></v-icon>
                 </template>
-
                 <v-menu
                   :open-on-focus="false"
                   activator="parent"
