@@ -13,23 +13,35 @@
   >
     <template v-slot:item="{ item }">
       <tr>
-        <td rowspan="2" class="">
-          <div class=""><span class="title">ISBN:</span>789573311478</div>
-          <div class=""><span class="title">書名:</span>和小星說童話</div>
-          <div class="">
-            <span class="title">出版社:</span>
-            大新
+        <td rowspan="2">
+          <div class="d-md-flex justify-space-between">
+            <div class="">
+              <div class=""><span class="title">ISBN:</span>789573311478</div>
+              <div class=""><span class="title">書名:</span>和小星說童話</div>
+              <div class="">
+                <span class="title">出版社:</span>
+                大新
+              </div>
+              <div class="tag">累積借閱次數：101次</div>
+            </div>
+            <div class="">
+              <v-btn
+                elevation="0"
+                class="mt-2 mt-md-0 iconBtn"
+                rounded="md"
+                variant="outlined"
+              >
+                <v-icon icon="mdi-delete"></v-icon>
+              </v-btn>
+            </div>
           </div>
-          <div class="tag">累積借閱次數：101次</div>
         </td>
         <td class="">王小明</td>
         <td>85%</td>
         <td rowspan="2">
           <div class="btnGroup d-flex">
-            <v-btn elevation="0" color="primary" size="small" class="mr-1"
-              >審核紀錄</v-btn
-            >
-            <v-btn elevation="0" color="primary" variant="outlined" size="small"
+            <v-btn elevation="0" color="primary" class="mr-1">審核紀錄</v-btn>
+            <v-btn elevation="0" color="primary" variant="outlined"
               >調整補償酬金比例</v-btn
             >
           </div>
@@ -42,22 +54,34 @@
       </tr>
       <tr>
         <td rowspan="2" class="">
-          <div class=""><span class="title">ISBN:</span>789573311478</div>
-          <div class=""><span class="title">書名:</span>和小星說童話</div>
-          <div class="">
-            <span class="title">出版社:</span>
-            大新
+          <div class="d-md-flex justify-space-between">
+            <div class="">
+              <div class=""><span class="title">ISBN:</span>789573311478</div>
+              <div class=""><span class="title">書名:</span>和小星說童話</div>
+              <div class="">
+                <span class="title">出版社:</span>
+                大新
+              </div>
+              <div class="tag">累積借閱次數：101次</div>
+            </div>
+            <div class="">
+              <v-btn
+                elevation="0"
+                class="mt-2 mt-md-0 iconBtn"
+                rounded="md"
+                variant="outlined"
+              >
+                <v-icon icon="mdi-delete"></v-icon>
+              </v-btn>
+            </div>
           </div>
-          <div class="tag">累積借閱次數：101次</div>
         </td>
         <td class="">王小明</td>
         <td>85%</td>
         <td rowspan="2">
           <div class="btnGroup d-flex">
-            <v-btn elevation="0" color="primary" size="small" class="mr-1"
-              >審核紀錄</v-btn
-            >
-            <v-btn elevation="0" color="primary" variant="outlined" size="small"
+            <v-btn elevation="0" color="primary" class="mr-1">審核紀錄</v-btn>
+            <v-btn elevation="0" color="primary" variant="outlined"
               >調整補償酬金比例</v-btn
             >
           </div>

@@ -14,39 +14,37 @@
     <template v-slot:item="{ item }">
       <tr>
         <td class="">
-          <div class="">
-            <span class="title">ISBN:</span> {{ item.selectable.name.ISBN }}
-            <a href=""><span class="check">查看</span></a>
-          </div>
-          <div class="">
-            <span class="title">書名:</span>{{ item.selectable.name.book }}
-          </div>
-          <div class="">
-            <span class="title">作者:</span>
-            <template
-              v-for="i in item.selectable.name.author"
-              :key="i in item.selectable.name.author"
-            >
-              <span class="name" :class="{ 'text-gray': i.status === false }">
-                {{ i.name }}
-              </span>
-            </template>
+          <div class="my-3">
+            <div class="">
+              <span class="title">ISBN:</span> {{ item.selectable.name.ISBN }}
+              <a href=""><span class="check">查看</span></a>
+            </div>
+            <div class="">
+              <span class="title">書名:</span>{{ item.selectable.name.book }}
+            </div>
+            <div class="">
+              <span class="title">作者:</span>
+              <template
+                v-for="i in item.selectable.name.author"
+                :key="i in item.selectable.name.author"
+              >
+                <span class="name" :class="{ 'text-gray': i.status === false }">
+                  {{ i.name }}
+                </span>
+              </template>
+            </div>
           </div>
         </td>
         <td class="">{{ item.selectable.class }}</td>
         <td class="">{{ item.selectable.status }}</td>
         <td>
           <div class="btnGroup d-flex">
-            <v-btn elevation="0" color="primary" size="small" class="mr-1"
-              >刪除</v-btn
-            >
-            <v-btn elevation="0" color="primary" variant="outlined" size="small"
-              >新增</v-btn
-            >
+            <v-btn elevation="0" color="primary" class="mr-1">刪除</v-btn>
+            <v-btn elevation="0" color="primary" variant="outlined">新增</v-btn>
           </div>
         </td>
         <td>
-          <v-btn elevation="0" color="primary" size="small" rounded="md">
+          <v-btn class="iconBtn" elevation="0" color="primary" rounded="md">
             <v-icon icon="mdi-square-edit-outline"></v-icon>
           </v-btn>
         </td>

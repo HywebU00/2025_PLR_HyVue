@@ -548,3 +548,14 @@ header {
     padding-top: 1rem;
   }
 }
+.iconBtn {
+  &.v-btn.v-btn--density-default {
+    padding: 0;
+    min-width: rem(40);
+  }
+}
+.showExpandBtn {
+  i {
+    margin-top: 0.3rem;
+  }
+}

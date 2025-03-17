@@ -5,12 +5,11 @@
       <h2><span>補償酬金調整設定</span></h2>
 
       <!-- 查詢區塊 start -->
-
       <v-col class="d-flex align-center" cols="12">
         <h3 class="mx-2 h3">查詢條件</h3>
         <!-- 收合搜尋條件 -->
         <v-btn
-          class="mb-2 ml-auto"
+          class="mb-2 ml-auto showExpandBtn"
           color="primary"
           prepend-icon="mdi-magnify"
           size="large"
@@ -138,122 +137,13 @@
       <!-- 查詢區塊 end  -->
       <v-col>
         <checkTable></checkTable>
-        <!-- v-table start -->
-        <!-- <v-table class="cellTable">
-          <thead class="bg-thead">
-            <tr>
-              <th class="text-center">選擇</th>
-              <th class="text-center">管制代號</th>
-              <th class="text-center">案件名稱</th>
-              <th class="text-center">填報期限</th>
-              <th class="text-center">交辦事項</th>
-              <th class="text-center">主辦單位</th>
-              <th class="text-center">預定完成日期</th>
-              <th class="text-center">辦理情形</th>
-              <th class="text-center">案件狀態</th>
-              <th class="text-center">審核狀態</th>
-            </tr>
-          </thead>
-          <tbody>
-            <template v-for="i in 2" :key="i">
-              <tr class="text-center">
-                <td rowspan="2">
-                  <v-checkbox></v-checkbox>
-                </td>
-                <td rowspan="2">666-01<br />(2023/08/14)</td>
-                <td rowspan="2">專案名稱專案名稱</td>
-                <td rowspan="2">2023/08/14 <br />14:00</td>
-                <td rowspan="2">
-                  <p class="mt-1">請回報</p>
-                  <div class="btnGroup">
-                    <v-btn
-                      class="my-1"
-                      color="submit"
-                      elevation="0"
-                      size="small"
-                      >批次下載填報附件</v-btn
-                    >
-                  </div>
-                </td>
-                <td>
-                  <p class="mt-1">教育文化處</p>
-                  <div class="btnGroup ma-1">
-                    <v-btn color="submit" elevation="0" size="small"
-                      >批次下載填報附件</v-btn
-                    >
-                  </div>
-                </td>
-                <td>2023/08/14</td>
-                <td>
-                  <ul>
-                    <li>填報期限:2023/08/14</li>
-                    <li>填報人:XXX</li>
-                    <li>
-                      本專案依XXX
-                      辦理修正，並依規定送辦行政院公報，同時於本會網站更新資訊
-                    </li>
-                  </ul>
-                </td>
-                <td>
-                  <p class="mt-1">持續追蹤</p>
-                  <div class="btnGroup ma-1">
-                    <v-btn color="primary" elevation="0" size="small"
-                      >批次下載填報附件</v-btn
-                    >
-                  </div>
-                </td>
-                <td>
-                  <p class="mt-1">持續追蹤</p>
-                  <div class="btnGroup ma-1">
-                    <v-btn color="primary" elevation="0" size="small"
-                      >審核歷程</v-btn
-                    >
-                    <v-btn color="secondary" elevation="0" size="small"
-                      >管理者退回</v-btn
-                    >
-                  </div>
-                </td>
-              </tr>
-              <tr class="text-center">
-                <td>
-                  <p class="mt-1">教育文化處</p>
-                  <div class="btnGroup">
-                    <v-btn
-                      class="ma-1"
-                      color="primary"
-                      elevation="0"
-                      size="small"
-                      >批次下載填報附件</v-btn
-                    >
-                  </div>
-                </td>
-                <td>2023/08/14</td>
-                <td>填報期限：2023/08/14</td>
-                <td>
-                  <p class="mt-1">持續追蹤</p>
-                  <div class="btnGroup">
-                    <v-btn
-                      color="primary"
-                      class="ma-1"
-                      elevation="0"
-                      size="small"
-                      >批次下載填報附件</v-btn
-                    >
-                  </div>
-                </td>
-                <td><p class="mt-1">持續追蹤</p></td>
-              </tr>
-            </template>
-          </tbody>
-        </v-table> -->
-        <!-- v-table end -->
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
-import checkTable from "@/components/dataTableServer2.vue";
+import checkTable from "@/components/checkTableServer.vue";
 export default {
   data: () => ({
     tab: null,
