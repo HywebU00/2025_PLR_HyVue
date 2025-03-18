@@ -32,8 +32,10 @@ table {
   }
   tbody {
   }
+
   &.v-table .v-table__wrapper > table tbody tr:not(:last-child) td {
-    border-bottom: 1px solid lighten(#695f5f, 50) !important;
+    border-bottom: 1px solid mix(#695f5f, #fff, 20%) !important;
+    // border-bottom: 1px solid lighten(#695f5f, 50) !important;
   }
   tr {
     td {
@@ -44,7 +46,8 @@ table {
     }
   }
   td {
-    border: 1px solid lighten(#695f5f, 50);
+    // border: 1px solid lighten(#695f5f, 50);
+    border: 1px solid mix(#695f5f, #fff, 20%);
     border-right: 0px;
     ul {
       padding: 0.5rem;
@@ -120,7 +123,8 @@ table {
             border-radius: 0.25rem;
             transition: all 0.1s;
             &:hover {
-              background: lighten($gray3, 40%);
+              background: mix($gray3, #fff, 40%);
+              // background: lighten($gray3, 40%);
             }
             @include screen('tablet') {
               margin-left: 0;
@@ -135,7 +139,9 @@ table {
       }
       td[colspan='8'] {
         border-bottom: $tableBorderColor 1px solid !important;
-        background-color: lighten(#695f5f, 55%);
+        // background-color: lighten(#695f5f, 55%);
+        background-color: mix(#695f5f, #fff, 10%);
+
         .tag {
           padding: 0.25rem 1rem;
           background: $tableTagColor;
