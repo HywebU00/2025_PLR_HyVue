@@ -34,5 +34,10 @@ export default defineConfig({
   // css的處理
   css: {
     devSourcemap: true,
+    preprocessorOptions: {
+      scss: {
+        silenceDeprecations: ["legacy-js-api"],
+      },
+    },
   },
 });
