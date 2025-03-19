@@ -1,3 +1,8 @@
+@use '@/sass/variables.scss' as *;
+@use '@/sass/common/mixins/mediaquery.scss' as *;
+@use '@/sass/common/mixins/text.scss' as *;
+@use 'sass:color';
+
 table {
   thead {
     white-space: nowrap;
@@ -34,9 +39,7 @@ table {
   }
 
   &.v-table .v-table__wrapper > table tbody tr:not(:last-child) td {
-    border-bottom: 1px solid scale-color(#f4f4f3, $lightness: -10%) !important;
-    // border-bottom: 1px solid mix(#695f5f, #fff, 20%) !important;
-    // border-bottom: 1px solid lighten(#695f5f, 50) !important;
+    border-bottom: 1px solid color.scale(#f4f4f3, $lightness: -10%) !important;
   }
   tr {
     td {
@@ -47,9 +50,7 @@ table {
     }
   }
   td {
-    // border: 1px solid lighten(#695f5f, 50);
-    // border: 1px solid mix(#695f5f, #fff, 20%);
-    border: 1px solid scale-color(#f4f4f3, $lightness: -10%);
+    border: 1px solid color.scale(#f4f4f3, $lightness: -10%);
     border-right: 0px;
     ul {
       padding: 0.5rem;
@@ -125,7 +126,7 @@ table {
             border-radius: 0.25rem;
             transition: all 0.1s;
             &:hover {
-              background: scale-color(#f4f4f3, $lightness: -3%);
+              background: color.scale(#f4f4f3, $lightness: -3%);
               //  background: mix($gray3, #fff, 40%);
               // background: lighten($gray3, 40%);
             }
@@ -144,7 +145,7 @@ table {
         border-bottom: $tableBorderColor 1px solid !important;
         // background-color: lighten(#695f5f, 55%);
         // background-color: mix(#695f5f, #fff, 10%);
-        background-color: scale-color(#f4f4f3, $lightness: -3%);
+        background-color: color.scale(#f4f4f3, $lightness: -3%);
         .tag {
           padding: 0.25rem 1rem;
           background: $tableTagColor;

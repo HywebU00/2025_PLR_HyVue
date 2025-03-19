@@ -16,17 +16,17 @@
         <td class="">
           <div class="my-3">
             <div class="">
-              <span class="title">ISBN:</span> {{ item.selectable.name.ISBN }}
+              <span class="title">ISBN:</span> {{ item.name.ISBN }}
               <a href=""><span class="check">查看</span></a>
             </div>
             <div class="">
-              <span class="title">書名:</span>{{ item.selectable.name.book }}
+              <span class="title">書名:</span>{{ item.name.book }}
             </div>
             <div class="">
               <span class="title">作者:</span>
               <template
-                v-for="i in item.selectable.name.author"
-                :key="i in item.selectable.name.author"
+                v-for="i in item.name.author"
+                :key="i in item.name.author"
               >
                 <span class="name" :class="{ 'text-gray': i.status === false }">
                   {{ i.name }}
@@ -35,8 +35,8 @@
             </div>
           </div>
         </td>
-        <td class="">{{ item.selectable.class }}</td>
-        <td class="">{{ item.selectable.status }}</td>
+        <td class="">{{ item.class }}</td>
+        <td class="">{{ item.status }}</td>
         <td>
           <div class="btnGroup d-flex">
             <v-btn elevation="0" color="primary" class="mr-1">刪除</v-btn>
