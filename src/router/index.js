@@ -43,10 +43,6 @@ const routes = [
         component: () => import("@/views/admin/cardComponent.vue"),
       },
       {
-        path: "chart",
-        component: () => import("@/views/admin/chartComponent.vue"),
-      },
-      {
         path: "widget",
         component: () => import("@/views/admin/widgetComponent.vue"),
       },

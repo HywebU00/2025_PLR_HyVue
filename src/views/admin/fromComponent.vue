@@ -843,8 +843,8 @@
 
 <script>
 //載入 文字編輯器
-import { QuillEditor } from "@vueup/vue-quill";
-import "@vueup/vue-quill/dist/vue-quill.snow.css";
+// import { QuillEditor } from "@vueup/vue-quill";
+// import "@vueup/vue-quill/dist/vue-quill.snow.css";
 
 //載入 日期選擇器
 import VueDatePicker from "@vuepic/vue-datepicker";
@@ -864,7 +864,6 @@ export default {
     multiDate: null,
   }),
   components: {
-    QuillEditor,
     VueDatePicker,
     datepickerModalVue,
   },
