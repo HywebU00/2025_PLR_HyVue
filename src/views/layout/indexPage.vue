@@ -70,7 +70,7 @@ export default {
         },
         {
           name: "樹狀圖",
-          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/register",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/widget",
           note: "",
         },
         {
