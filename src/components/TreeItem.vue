@@ -13,7 +13,7 @@
           </span>
         </template>
         <template v-else>
-          <v-icon class="mr-2" icon="mdi-file-document" color="secondary" />
+          <v-icon class="mr-2" icon="mdi-file-document" color="info" />
         </template>
         {{ model.name }}
         <template v-if="isFolder">

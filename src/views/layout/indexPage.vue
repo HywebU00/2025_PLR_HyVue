@@ -69,8 +69,8 @@ export default {
           note: "",
         },
         {
-          name: "",
-          link: "",
+          name: "樹狀圖",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/register",
           note: "",
         },
         {
