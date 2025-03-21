@@ -20,3 +20,14 @@
 .v-table {
   background: unset !important;
 }
+.v-card {
+  .v-input__control {
+    background: #fff;
+    & [role='radiogroup'] {
+      background: #fff;
+    }
+    &:has(.v-checkbox-btn) {
+      background: #fff;
+    }
+  }
+}

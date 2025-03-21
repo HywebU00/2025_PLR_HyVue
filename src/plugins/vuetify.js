@@ -19,9 +19,12 @@ export default createVuetify({
         colors: {
           primary: "#3a3a3a",
           info: "#626060",
+          submit: "#3a3a3a",
+          cancel: "#626060",
+          import: "#3a3a3a",
+          export: "#626060",
           secondary: "#dcdcdc",
-          loginColor: "#0156a2",
-          light: "#8eebb1",
+
           navText: "#262626",
           thead: "#626060", // "#dcdcdc",
         },

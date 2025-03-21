@@ -14,6 +14,7 @@
       <v-col class="px-4" md="9" cols="12">
         <v-form>
           <!-- 表單start -->
+          <!-- 如果不要 border style 請在 “formGrp” 加上class "noBorder" -->
           <v-container class="container">
             <v-row class="d-flex formGrp">
               <v-col cols="12" md="2" class="pb-0 d-flex justify-lg-end">
@@ -227,7 +228,8 @@
               </v-col>
             </v-row>
             <!-- 左右兩欄 start -->
-            <v-row class="d-flex formGrp formGrp_2">
+            <!-- 如果不要 border style 請在 “formGrp” 加上class "noBorder" -->
+            <v-row class="d-flex formGrp formGrp_2 noBorder">
               <v-col cols="12" md="6">
                 <v-row>
                   <v-col class="bg-thead formGrpTitle mb-5 mx-3">應領數</v-col>
@@ -297,6 +299,61 @@
           </v-container>
           <!-- 表單end -->
         </v-form>
+        <v-row class="mt-0">
+          <v-col>
+            <v-table>
+              <thead class="bg-thead">
+                <tr>
+                  <th class="text-center">序號</th>
+                  <th class="text-left">置頂</th>
+                  <th class="text-center">標題</th>
+                  <th class="text-left">資料分類</th>
+                  <th class="text-left">上線日期</th>
+                  <th class="text-left">下線日期</th>
+                  <th class="text-left">語系</th>
+                  <th class="text-left">狀態</th>
+                  <th class="text-left">動作</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="item in data" :key="item.name">
+                  <td class="text-center">{{ item.id }}</td>
+                  <td>
+                    <template v-if="item.top == true">
+                      <v-chip label color="primary">置頂</v-chip>
+                    </template>
+                  </td>
+                  <td>{{ item.title }}</td>
+                  <td>{{ item.class }}</td>
+                  <td>{{ item.dateStart }}</td>
+                  <td>{{ item.dateEnd }}</td>
+                  <td>{{ item.lang }}</td>
+                  <td>{{ item.status }}</td>
+                  <td>
+                    <div class="btnGroup d-flex">
+                      <v-btn
+                        size="small"
+                        icon="mdi-delete"
+                        variant="text"
+                      ></v-btn>
+                      <v-tooltip location="top">
+                        <template v-slot:activator="{ props }">
+                          <v-btn
+                            icon="mdi-pencil"
+                            variant="text"
+                            size="small"
+                            v-bind="props"
+                          />
+                        </template>
+                        <span>編輯</span>
+                      </v-tooltip>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </v-table>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
   </v-container>

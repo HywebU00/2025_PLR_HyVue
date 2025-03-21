@@ -38,6 +38,34 @@
       <!-- stepBar end-->
       <v-form>
         <v-container>
+          <!-- <v-row class="d-flex formGrp">
+            <v-col cols="6">
+              <v-text-field
+                variant="outlined"
+                density="compact"
+                single-line
+                hide-details="auto"
+              ></v-text-field>
+            </v-col>
+            <v-col cols="auto">
+              <v-btn
+                color="secondary"
+                size="large"
+                elevation="0"
+                @click.stop="searchHandler()"
+                >查詢</v-btn
+              >
+            </v-col>
+            <v-col cols="auto" class="ml-auto">
+              <v-btn
+                color="primary"
+                elevation="0"
+                size="large"
+                @click.stop="doAdd()"
+                >新增帳號</v-btn
+              >
+            </v-col>
+          </v-row> -->
           <v-row class="formGrp">
             <v-col class="pb-0 d-flex justify-lg-end" cols="12" lg="2">
               <label class="text-primary" for="">

@@ -8,8 +8,10 @@
       <v-col class="d-flex align-center" cols="12">
         <h3 class="mx-2 h3">查詢條件</h3>
         <!-- 收合搜尋條件 -->
+      </v-col>
+      <v-col class="d-block align-center d-sm-flex">
         <v-btn
-          class="mb-2 ml-auto showExpandBtn"
+          class="mb-2 showExpandBtn"
           color="primary"
           prepend-icon="mdi-magnify"
           size="large"
@@ -17,6 +19,17 @@
         >
           搜尋條件
         </v-btn>
+        <div class="ml-auto">
+          <v-select
+            class="ml-auto filterSelect"
+            label="下拉式選單"
+            density="compact"
+            variant="outlined"
+            single-line
+            hide-details="auto"
+            :items="['選項ㄧ', '選項二', '選項三']"
+          ></v-select>
+        </div>
       </v-col>
       <v-col cols="12">
         <v-expand-transition>
@@ -131,8 +144,9 @@
           </div>
         </v-expand-transition>
       </v-col>
-      <v-col class="d-flex" cols="12">
-        <h3 class="mx-2 h3">已登記作品清單</h3>
+      <v-col class="d-block align-center d-sm-flex pb-0" cols="12">
+        <h4 class="mx-2 h4">已登記作品清單</h4>
+        <v-btn class="ml-auto mt-sm-0 mt-2" color="primary"> 匯出報表 </v-btn>
       </v-col>
       <!-- 查詢區塊 end  -->
       <v-col>
