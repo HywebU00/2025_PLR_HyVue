@@ -146,10 +146,10 @@
       </v-col>
       <v-col class="d-block align-center d-sm-flex pb-0" cols="12">
         <h4 class="mx-2 h4">已登記作品清單</h4>
-        <div class="ml-auto mt-sm-0 mt-2">
+        <div class="ml-auto mt-sm-0 mt-2 titleBtnGrp">
           <v-btn class="mx-1" color="secondary"> 編輯報表 </v-btn>
           <v-btn class="mx-1" color="primary"> 匯出報表 </v-btn>
-          <!-- <v-btn class="mx-1" color="info"> 編輯報表 </v-btn> -->
+          <v-btn class="mx-1" color="info"> 編輯報表 </v-btn>
         </div>
       </v-col>
       <!-- 查詢區塊 end  -->
