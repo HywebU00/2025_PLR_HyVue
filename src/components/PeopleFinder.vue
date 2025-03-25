@@ -169,7 +169,7 @@ export default {
                     <v-col class="bg-thead formGrpTitle mx-2">扣領數</v-col>
                   </v-row>
                   <v-row class="d-flex formGrp noBorder">
-                    <v-col class="list" cols="12">
+                    <v-col class="list multipleContent" cols="12">
                       <select multiple="multiple" class="w-100 h-100">
                         <option
                           v-for="(item, index) in 6"

@@ -149,7 +149,13 @@ input:-internal-autofill-selected {
   }
 }
 .multipleContent {
-  padding-top: 0 !important;
+  // padding-top: 0 !important;
+  .formGrpTitle {
+    margin-top: 0.5rem;
+  }
+  &:has(> select) {
+    padding-top: 0 !important;
+  }
   select {
     appearance: none;
     &:focus-visible {
