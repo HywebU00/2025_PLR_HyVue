@@ -156,12 +156,16 @@
       <v-col>
         <checkTable></checkTable>
       </v-col>
+      <v-col>
+        <dataTable></dataTable>
+      </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
 import checkTable from "@/components/checkTableServer.vue";
+import dataTable from "@/components/defaultDataTableServer.vue";
 export default {
   data: () => ({
     tab: null,
@@ -175,6 +179,7 @@ export default {
   mounted() {},
   components: {
     checkTable,
+    dataTable,
   },
 };
 </script>
