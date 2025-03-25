@@ -148,3 +148,22 @@ input:-internal-autofill-selected {
     width: 100%;
   }
 }
+.multipleContent {
+  padding-top: 0 !important;
+  select {
+    appearance: none;
+    &:focus-visible {
+      outline: none;
+    }
+    option {
+      padding: 0.5rem;
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}
+select[multiple] option:checked {
+  background-color: #f0f0f0 !important; /* 改成你想要的顏色 */
+  color: black; /* 調整文字顏色 */
+}
