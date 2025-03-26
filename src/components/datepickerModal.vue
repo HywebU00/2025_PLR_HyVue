@@ -2,12 +2,12 @@
   <v-menu v-model="menu" :close-on-content-click="false" location="center">
     <template v-slot:activator="{ props }">
       <v-text-field
-        variant="solo"
         label="日期選擇"
         v-bind="props"
         hide-details="auto"
         density="compact"
         single-line
+        variant="outlined"
         v-model="formattedDate"
         prepend-inner-icon="mdi-calendar-range"
       ></v-text-field>

@@ -12,14 +12,14 @@ export default {
   <v-row class="finder">
     <v-container>
       <p class="text-primary">
-        PeopleFinder 元件放於 components/PeopleFinder_hasJs.vue
+        PeopleFinder 元件放於 components/PeopleFinder.vue
       </p>
     </v-container>
     <v-dialog
       class="peopleFinderCard"
       v-model="dialog"
       scrollable
-      max-width="1200"
+      max-width="800"
       transition="dialog-bottom-transition"
     >
       <!-- Demo 專用用按鈕 start -->
@@ -31,7 +31,7 @@ export default {
       <v-card>
         <v-card-title>
           <v-container class="pb-0">
-            <span class="text-primary">選擇知識樹擁有者</span>
+            <span class="text-primary font-weight-bold">選擇知識樹擁有者</span>
           </v-container>
         </v-card-title>
         <v-card-text>
@@ -63,11 +63,7 @@ export default {
                 <v-col>
                   <v-row>
                     <v-col cols="12" lg="3" md="4">
-                      <v-radio-group
-                        inline
-                        color="secondary"
-                        hide-details="auto"
-                      >
+                      <v-radio-group inline color="primary" hide-details="auto">
                         <v-radio label="單位" value="true"></v-radio>
                         <v-radio label="專案群組" value="false"></v-radio>
                       </v-radio-group>
@@ -109,6 +105,7 @@ export default {
                 <v-col>
                   <v-text-field
                     variant="outlined"
+                    hide-details="auto"
                     single-line
                     density="compact"
                   ></v-text-field>
@@ -139,29 +136,37 @@ export default {
                     class="d-flex align-center justify-center flex-sm-column"
                   >
                     <v-btn
-                      class="mb-2 mx-1"
-                      icon="mdi-chevron-right"
+                      elevation="0"
+                      class="mt-2 mt-md-0 iconBtn mb-2 mx-1"
+                      rounded="md"
                       color="import"
-                      size="small"
-                    ></v-btn>
+                    >
+                      <v-icon icon="mdi-chevron-right"></v-icon>
+                    </v-btn>
                     <v-btn
-                      class="mb-2 mx-1"
+                      elevation="0"
+                      class="mt-2 mt-md-0 iconBtn mb-2 mx-1"
+                      rounded="md"
                       color="export"
-                      icon="mdi-chevron-left"
-                      size="small"
-                    ></v-btn>
+                    >
+                      <v-icon icon="mdi-chevron-left"></v-icon>
+                    </v-btn>
                     <v-btn
-                      class="mb-2 mx-1"
-                      icon="mdi-chevron-up"
+                      elevation="0"
+                      class="mt-2 mt-md-0 iconBtn mb-2 mx-1"
+                      rounded="md"
                       color="import"
-                      size="small"
-                    ></v-btn>
+                    >
+                      <v-icon icon="mdi-chevron-up"></v-icon>
+                    </v-btn>
                     <v-btn
+                      elevation="0"
+                      class="mt-2 mt-md-0 iconBtn mb-2 mx-1"
+                      rounded="md"
                       color="export"
-                      class="mb-2 mx-1"
-                      icon="mdi-chevron-down"
-                      size="small"
-                    ></v-btn>
+                    >
+                      <v-icon icon="mdi-chevron-down"></v-icon>
+                    </v-btn>
                   </div>
                 </v-col>
                 <v-col cols="12" sm="" class="multipleContent">
@@ -213,10 +218,10 @@ export default {
                 <v-col>
                   <v-row class="d-flex formGrp">
                     <v-col cols="12" md="4" class="infoTitle">
-                      <label for="type">資訊單位/審核人員 </label>
+                      <label for="type">資訊單位</label>
                     </v-col>
                     <v-col>
-                      <v-radio-group inline color="secondary">
+                      <v-radio-group inline color="primary">
                         <v-radio label="許小傑" value="true"></v-radio>
                         <v-radio label="邱大發" value="false"></v-radio>
                       </v-radio-group>
@@ -233,7 +238,7 @@ export default {
             elevation="0"
             color="submit"
             variant="flat"
-            rounded="lg"
+            rounded="md"
             size="large"
             @click="dialog = !dialog"
           >
@@ -242,7 +247,7 @@ export default {
           <v-btn
             color="cancel"
             variant="flat"
-            rounded="lg"
+            rounded="md"
             size="large"
             class="cancel"
             @click="dialog = !dialog"

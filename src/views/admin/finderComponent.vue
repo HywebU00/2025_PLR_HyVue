@@ -9,15 +9,16 @@
         <h3 class="mx-2 h3">查詢條件</h3>
         <!-- 收合搜尋條件 -->
       </v-col>
-      <v-col>
-        <PeopleFinder />
-      </v-col>
+      <v-col class="mx-2 mb-2" cols="12"> <PeopleFinder /> </v-col>
+      <v-col class="mx-2" cols="12"><DialogComponent /></v-col>
     </v-row>
   </v-container>
 </template>
 
 <script>
 import PeopleFinder from "@/components/PeopleFinder.vue";
+import DialogComponent from "@/components/dialogComponent.vue";
+
 // import { maskStore, pageStting } from "@/stores/storage.js";
 // const ps = pageStting();
 export default {
@@ -65,6 +66,7 @@ export default {
   },
   components: {
     PeopleFinder,
+    DialogComponent,
   },
 };
 </script>
