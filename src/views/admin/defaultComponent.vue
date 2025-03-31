@@ -199,6 +199,188 @@
               ></v-text-field>
             </v-col>
           </v-row>
+          <!-- 檔案上傳 start -->
+          <v-row class="formGrp">
+            <v-col class="pb-0 d-flex justify-lg-end" cols="12" lg="2">
+              <label class="text-primary" for="">檔案</label>
+            </v-col>
+            <v-col>
+              <div data-v-0ed52433="" class="upload-area hyUpload">
+                <div
+                  data-v-0ed52433=""
+                  class="v-table v-theme--default v-table--density-default"
+                >
+                  <!---->
+                  <div class="v-table__wrapper">
+                    <table>
+                      <thead data-v-0ed52433="">
+                        <tr>
+                          <th data-v-0ed52433="" width="15%">縮圖</th>
+                          <th data-v-0ed52433="" width="40%" align="left">
+                            檔案名稱
+                          </th>
+                          <th data-v-0ed52433="" width="15%">檔案大小</th>
+                          <th data-v-0ed52433="" width="15%">狀態</th>
+                          <th data-v-0ed52433="" width="15%">動作</th>
+                        </tr>
+                      </thead>
+                      <tbody data-v-0ed52433="">
+                        <tr
+                          data-v-0ed52433=""
+                          class="drag"
+                          data-draggable="true"
+                        >
+                          <td data-v-0ed52433="" class="thumb" align="center">
+                            <div>
+                              <img
+                                src="~@/assets/images/logo.png"
+                                draggable="false"
+                              />
+                            </div>
+                          </td>
+                          <td data-v-0ed52433="" class="">
+                            <a
+                              data-v-0ed52433=""
+                              href="http://plr.hyweb.com.tw/sample/202503/T-03745365.pdf"
+                              target="_blank"
+                              >113-1學期結業式流程表0110.pdf</a
+                            >
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            94.6 KB
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            100%
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            <v-btn
+                              class="iconBtn"
+                              elevation="0"
+                              color="secondary"
+                            >
+                              <v-icon icon="mdi-close"></v-icon>
+                            </v-btn>
+                          </td>
+                        </tr>
+                        <tr
+                          data-v-0ed52433=""
+                          class="drag"
+                          data-draggable="true"
+                        >
+                          <td data-v-0ed52433="" class="thumb" align="center">
+                            <div>
+                              <img
+                                src="~@/assets/images/logo.png"
+                                draggable="false"
+                              />
+                            </div>
+                          </td>
+                          <td data-v-0ed52433="" class="">
+                            <a
+                              data-v-0ed52433=""
+                              href="http://plr.hyweb.com.tw/sample/202503/T-83756458.pdf"
+                              target="_blank"
+                              >113學年度第2學期開學日時程表0110.pdf</a
+                            >
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            81 KB
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            100%
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            <v-btn
+                              class="iconBtn"
+                              elevation="0"
+                              color="secondary"
+                            >
+                              <v-icon icon="mdi-close"></v-icon>
+                            </v-btn>
+                          </td>
+                        </tr>
+                        <tr
+                          data-v-0ed52433=""
+                          class="drag"
+                          data-draggable="true"
+                        >
+                          <td data-v-0ed52433="" class="thumb" align="center">
+                            <div>
+                              <img
+                                src="~@/assets/images/logo.png"
+                                draggable="false"
+                              />
+                            </div>
+                          </td>
+                          <td data-v-0ed52433="" class="">
+                            <a
+                              data-v-0ed52433=""
+                              href="http://plr.hyweb.com.tw/sample/202503/T-43595332.pdf"
+                              target="_blank"
+                              >113-2班級幹部訓練時間表.pdf</a
+                            >
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            79.8 KB
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            100%
+                          </td>
+                          <td data-v-0ed52433="" class="" align="center">
+                            <v-btn
+                              class="iconBtn"
+                              elevation="0"
+                              color="secondary"
+                            >
+                              <v-icon icon="mdi-close"></v-icon>
+                            </v-btn>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!---->
+                </div>
+                <p data-v-0ed52433="">
+                  請把檔案拖拉到此框，或是<button
+                    data-v-0ed52433=""
+                    type="button"
+                    class="v-btn v-theme--default text-gray v-btn--density-default v-btn--size-small v-btn--variant-tonal ml-2"
+                  >
+                    <span class="v-btn__overlay"></span
+                    ><span class="v-btn__underlay"></span
+                    ><!----><span class="v-btn__content" data-no-activator=""
+                      >選擇檔案</span
+                    ><!----><!---->
+                  </button>
+                </p>
+                <p data-v-0ed52433="" class="textInfo">
+                  <span data-v-0ed52433=""
+                    >檔案類型：*.jpg *.jpeg *.gif *.png *.svg *.doc *.docx *.xls
+                    *.xlsx *.pptx *.ppt *.pdf *.7z *.zip *.rar *.jpg *.jpeg
+                    *.gif *.png *.svg *.txt *.odt *.ods *.odp *.odg *.mp3
+                    *.mp4</span
+                  ><span data-v-0ed52433="">檔案大小：5 MB</span
+                  ><span data-v-0ed52433=""><!--v-if--></span>
+                </p>
+                <!--v-if--><input
+                  data-v-0ed52433=""
+                  type="hidden"
+                  id="btn-attach"
+                  name="btn-attach"
+                  value="3"
+                  style="display: none"
+                /><input
+                  data-v-0ed52433=""
+                  type="file"
+                  accept=".jpg,.jpeg,.gif,.png,.svg,.doc,.docx,.xls,.xlsx,.pptx,.ppt,.pdf,.7z,.zip,.rar,.jpg,.jpeg,.gif,.png,.svg,.txt,.odt,.ods,.odp,.odg,.mp3,.mp4"
+                  multiple=""
+                  style="display: none"
+                />
+              </div>
+            </v-col>
+          </v-row>
+          <!-- 檔案上傳 end -->
           <v-row class="formGrp">
             <v-col cols="" class="captchaCard">
               <div class="">

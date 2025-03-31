@@ -173,3 +173,78 @@ select[multiple] option:checked {
   background-color: #f0f0f0 !important; /* 改成你想要的顏色 */
   color: black; /* 調整文字顏色 */
 }
+.hyUpload {
+  &.upload-area {
+    border: none;
+    border-radius: 4px;
+    // background: #f0f0f0;
+  }
+  .v-table__wrapper {
+    > table {
+      > thead {
+        > tr {
+          > th {
+            height: 3rem !important;
+          }
+        }
+      }
+    }
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    tr {
+      border-bottom: 1px solid #d7d7d7;
+      a {
+        color: #000;
+        text-decoration: underline;
+      }
+    }
+  }
+  thead {
+    color: #fff;
+    background: $gray2;
+    border-radius: 4px 4px 0 0;
+    th {
+      padding: 0.5rem;
+    }
+  }
+  td {
+    height: 2rem;
+    padding: 0.5rem 0;
+    &:has(img) {
+      img {
+        max-width: 60px;
+        padding: 0 0.5rem;
+      }
+    }
+  }
+  p {
+    padding: 1rem;
+    .v-btn {
+      background: $gray2;
+      .v-btn__content {
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+  .v-btn--variant-tonal {
+    .v-btn__underlay {
+      background: unset;
+    }
+  }
+  .textInfo {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+
+    background: #dcdcdcc0;
+    border-radius: 0.2rem;
+    color: $gray2;
+
+    span {
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
