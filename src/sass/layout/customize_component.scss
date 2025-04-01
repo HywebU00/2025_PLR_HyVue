@@ -4,20 +4,20 @@
 @use 'sass:color';
 
 // 文字編輯器 css
-.textEdit {
-  margin-bottom: 1rem;
-  border: 1px solid #b5b5b5;
-  border-radius: rem(8);
-  overflow: hidden;
-  .fr-box.fr-basic {
-    border-radius: 4px;
-    .fr-toolbar,
-    .fr-wrapper,
-    .fr-second-toolbar {
-      border: unset;
-    }
-  }
-}
+// .textEdit {
+//   margin-bottom: 1rem;
+//   border: 1px solid #b5b5b5;
+//   border-radius: rem(8);
+//   overflow: hidden;
+//   .fr-box.fr-basic {
+//     border-radius: 4px;
+//     .fr-toolbar,
+//     .fr-wrapper,
+//     .fr-second-toolbar {
+//       border: unset;
+//     }
+//   }
+// }
 .fr-box.fr-basic,
 .fr-toolbar,
 .fr-box.fr-basic .fr-wrapper,
