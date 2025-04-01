@@ -127,8 +127,6 @@ table {
             transition: all 0.1s;
             &:hover {
               background: color.scale(#f4f4f3, $lightness: -3%);
-              //  background: mix($gray3, #fff, 40%);
-              // background: lighten($gray3, 40%);
             }
             @include screen('tablet') {
               margin-left: 0;
@@ -143,8 +141,6 @@ table {
       }
       td[colspan='8'] {
         border-bottom: $tableBorderColor 1px solid !important;
-        // background-color: lighten(#695f5f, 55%);
-        // background-color: mix(#695f5f, #fff, 10%);
         background-color: color.scale(#f4f4f3, $lightness: -3%);
         .tag {
           padding: 0.25rem 1rem;
