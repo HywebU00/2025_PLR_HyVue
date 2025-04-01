@@ -24,7 +24,11 @@
 .fr-second-toolbar {
   background: #f0f0f0 !important;
 }
+.textEdit div[isvalid] {
+  border: 1px solid #b5b5b5;
+  overflow: hidden;
+}
+
 .textEdit div[isvalid='false'] {
-  color: red;
   border: 1px solid red;
 }

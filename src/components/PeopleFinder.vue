@@ -62,8 +62,13 @@ export default {
                 </v-col>
                 <v-col>
                   <v-row>
-                    <v-col cols="12" lg="3" md="4">
-                      <v-radio-group inline color="primary" hide-details="auto">
+                    <v-col cols="12">
+                      <v-radio-group
+                        color="primary"
+                        inline
+                        hide-details="auto"
+                        single-line
+                      >
                         <v-radio label="單位" value="true"></v-radio>
                         <v-radio label="專案群組" value="false"></v-radio>
                       </v-radio-group>
@@ -131,7 +136,7 @@ export default {
                     </v-col>
                   </v-row>
                 </v-col>
-                <v-col cols="12" sm="1" class="btnList">
+                <v-col cols="12" sm="1" class="btnList align-center d-flex">
                   <div
                     class="d-flex align-center justify-center flex-sm-column"
                   >
