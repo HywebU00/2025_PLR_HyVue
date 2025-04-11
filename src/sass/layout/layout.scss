@@ -216,11 +216,16 @@
     font-weight: bold;
     padding: 0.75rem 1.25rem !important;
     margin-right: 1rem;
+
     &:last-child {
       margin-right: 0;
     }
     .v-icon {
       font-size: 1.5em !important;
+    }
+    &:has(.v-icon) {
+      background: $colorSecondary !important;
+      color: #333333 !important;
     }
   }
   @include screen('tablet') {
@@ -231,6 +236,7 @@
 .pcMenu {
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
   position: sticky !important;
+  background: $colorSecondary !important;
   top: 0 !important;
   .v-toolbar__content {
     min-height: rem(72) !important;
@@ -247,7 +253,6 @@
 
     .v-btn .v-btn__content {
       font-size: rem(18);
-      color: #fff;
     }
     .v-btn.v-btn--variant-plain {
       opacity: 1;
@@ -288,6 +293,9 @@
 }
 .logoText {
   font-size: 1.75rem;
+  img {
+    max-width: rem(300);
+  }
   @include screen('tablet') {
     margin-left: 0rem;
     width: 100%;
@@ -502,7 +510,7 @@ header {
       &::after {
         content: '';
         position: absolute;
-        width: calc(100% - 230px);
+        width: calc(100% - 320px);
         height: 1px;
         background: #fff;
         top: 20px;

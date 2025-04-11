@@ -7,11 +7,13 @@
         class="rounded-0 h-100 ml-0 phoneBtn"
         @click.stop="[(rail = !rail), (overlay = true)]"
       ></v-app-bar-nav-icon>
-      <h1 class="logoText">公共出借權登記系統</h1>
+      <h1 class="logoText">
+        <img src="~@/assets/images/h_logo.png" alt="" />
+      </h1>
       <functionNavigation />
     </v-app-bar>
     <!-- 桌機版 menu start  -->
-    <v-app-bar class="pcMenu bg-primary elevation-0">
+    <v-app-bar class="pcMenu bg-light elevation-0">
       <div class="">
         <v-btn variant="plain" append-icon="mdi-chevron-down">
           出版品牌管理

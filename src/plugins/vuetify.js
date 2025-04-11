@@ -24,6 +24,7 @@ export default createVuetify({
           import: "#3a3a3a",
           export: "#626060",
           secondary: "#dcdcdc",
+          light: "#ffd648",
 
           navText: "#262626",
           thead: "#626060", // "#dcdcdc",
