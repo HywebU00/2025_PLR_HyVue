@@ -300,6 +300,10 @@
     margin-left: 0rem;
     width: 100%;
     text-align: center;
+    img {
+      max-width: rem(250);
+      margin-right: rem(64);
+    }
   }
   @include screen('mobile') {
     font-size: 1.25rem;
