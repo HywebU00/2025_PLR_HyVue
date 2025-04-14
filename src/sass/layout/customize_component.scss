@@ -32,3 +32,25 @@
 .textEdit div[isvalid='false'] {
   border: 1px solid red;
 }
+
+.v-dialog {
+  &.consent {
+    .v-card-title {
+      span {
+        white-space: wrap;
+      }
+    }
+    ul {
+      margin: 0.5rem 0;
+      li {
+        padding-left: 1rem;
+        margin-bottom: 1.25rem;
+        ul {
+          li {
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+}
