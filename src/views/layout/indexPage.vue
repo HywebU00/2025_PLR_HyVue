@@ -74,6 +74,11 @@ export default {
           note: "",
         },
         {
+          name: "登入頁面",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/login",
+          note: "",
+        },
+        {
           name: "PeopleFinder 元件",
           link: "https://hywebu00.github.io/2025_PLR_HyVue/#/finder",
           note: "",
