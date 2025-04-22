@@ -8,7 +8,9 @@
         @click.stop="[(rail = !rail), (overlay = true)]"
       ></v-app-bar-nav-icon>
       <h1 class="logoText">
-        <img src="~@/assets/images/h_logo.png" alt="" />
+        <a href="">
+          <img src="~@/assets/images/h_logo.png" alt="" />
+        </a>
       </h1>
       <functionNavigation />
     </v-app-bar>
@@ -239,9 +241,9 @@
         <v-list lines="one">
           <v-list-item>
             <ul>
-              <li>隱私權政策</li>
-              <li>網站安全政策</li>
-              <li>政府網站資料開放宣告</li>
+              <li><a href="">隱私權政策</a></li>
+              <li><a href="">網站安全政策</a></li>
+              <li><a href="">政府網站資料開放宣告</a></li>
             </ul>
           </v-list-item>
           <v-list-item

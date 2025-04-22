@@ -3,7 +3,6 @@
     <v-breadcrumbs :items="['首頁', '節點', '節點']"></v-breadcrumbs>
     <v-row>
       <h2><span>補償酬金調整設定</span></h2>
-
       <!-- 查詢區塊 start -->
       <v-col class="d-flex align-center" cols="12">
         <h3 class="mx-2 h3">查詢條件</h3>
@@ -126,13 +125,9 @@
 <script>
 import PeopleFinder from "@/components/PeopleFinder.vue";
 import DialogComponent from "@/components/dialogComponent.vue";
-
-// import { maskStore, pageStting } from "@/stores/storage.js";
-// const ps = pageStting();
+import Atable from "@/components/dataTable.vue";
 export default {
   data: () => ({
-    // mk: maskStore(),
-    // ps: pageStting(),
     tab: null,
     toggle: null,
     functionGroupToggle: 0,
@@ -144,12 +139,7 @@ export default {
     //checkbox
     selected: ["John"],
   }),
-  // created() {
-  //   ps.setTopNavPageTiltle("帳號管理");
-  // },
-  // mounted() {
-  //   this.removeIndexBg();
-  // },
+
   methods: {
     panelsHandle() {
       if (this.panel == 0) {

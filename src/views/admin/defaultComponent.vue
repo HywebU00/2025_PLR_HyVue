@@ -38,34 +38,6 @@
       <!-- stepBar end-->
       <v-form>
         <v-container>
-          <!-- <v-row class="d-flex formGrp">
-            <v-col cols="6">
-              <v-text-field
-                variant="outlined"
-                density="compact"
-                single-line
-                hide-details="auto"
-              ></v-text-field>
-            </v-col>
-            <v-col cols="auto">
-              <v-btn
-                color="secondary"
-                size="large"
-                elevation="0"
-                @click.stop="searchHandler()"
-                >查詢</v-btn
-              >
-            </v-col>
-            <v-col cols="auto" class="ml-auto">
-              <v-btn
-                color="primary"
-                elevation="0"
-                size="large"
-                @click.stop="doAdd()"
-                >新增帳號</v-btn
-              >
-            </v-col>
-          </v-row> -->
           <v-row class="formGrp">
             <v-col class="pb-0 d-flex justify-lg-end" cols="12" lg="2">
               <label class="text-primary" for="">
@@ -199,6 +171,36 @@
               ></v-text-field>
             </v-col>
           </v-row>
+          <!-- 驗證碼欄位 start -->
+          <v-row class="formGrp">
+            <v-col class="pb-0 d-flex justify-lg-end" cols="12" lg="2">
+              <label class="text-primary" for="">
+                <abbr class="necessary" title="為必填(選)欄位,不能為空白。"
+                  >* </abbr
+                >驗證碼</label
+              >
+            </v-col>
+            <v-col class="compactContent" cols="">
+              <v-text-field
+                variant="outlined"
+                label="請輸入驗證碼"
+                type="text"
+                hide-details="auto"
+                single-line
+                density="compact"
+              ></v-text-field>
+              <div class="img">
+                <img src="~@/assets/images/captcha.gif" />
+              </div>
+              <v-btn class="iconBtn" elevation="0" color="secondary">
+                <v-icon icon="mdi-refresh"></v-icon>
+              </v-btn>
+              <v-btn class="iconBtn" elevation="0" color="secondary">
+                <v-icon icon="mdi-refresh"></v-icon>
+              </v-btn>
+            </v-col>
+          </v-row>
+          <!-- 驗證碼欄位 end -->
           <!-- 檔案上傳 start -->
           <v-row class="formGrp">
             <v-col class="pb-0 d-flex justify-lg-end" cols="12" lg="2">
@@ -384,15 +386,17 @@
           <v-row class="formGrp">
             <v-col cols="" class="captchaCard">
               <div class="">
-                <img src="~@/assets/images/Pica-enhance.png" alt="" />
-                <v-checkbox label="" hide-details="auto">
-                  <template v-slot:label>
-                    <div>
-                      我同意平台
-                      <a class="linkText" href="">個人資料蒐集處理利用</a>
-                    </div>
-                  </template>
-                </v-checkbox>
+                <div class="img">
+                  <img src="~@/assets/images/Pica-enhance.png" alt="" />
+                </div>
+                <div class="content">
+                  <v-checkbox label="" hide-details="auto">
+                    <template v-slot:label>
+                      <div>我同意平台</div>
+                    </template>
+                  </v-checkbox>
+                  <a class="linkText" href="">個人資料蒐集處理利用</a>
+                </div>
               </div>
             </v-col>
           </v-row>

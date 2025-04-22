@@ -3,6 +3,7 @@
     :headers="headers"
     :items="items"
     :items-per-page-text="customItemsPerPageText"
+    class="dataTable"
   >
     <template v-slot:item="{ item }">
       <tr>

@@ -1,49 +1,86 @@
 <template>
-  <div style="background: #eee" class="h-screen w-100 d-flex justify-center">
-    <div ref="loginCard" class="mt-16">
-      <v-sheet elevation="5" rounded="lg" width="320px" class="pa-4 r mx-auto">
-        <v-img
-          :width="50"
-          aspect-ratio="1/1"
-          class="mr-auto ml-auto mt-5"
-          cover
-          src="~@/assets/images/logo.png"
-        ></v-img>
-        <h2 class="my-3 mb-5 text-center">網站管理平台</h2>
-        <v-divider class="pt-2 mb-2"></v-divider>
-        <v-form fast-fail>
-          <v-text-field
-            density="compact"
-            messages="說明文字"
-            label="請輸入帳號"
-          ></v-text-field>
-          <v-text-field
-            label="請輸入密碼"
-            :append-inner-icon="visible ? 'mdi-eye-off' : 'mdi-eye'"
-            :type="visible ? 'text' : 'password'"
-            density="compact"
-            :messages="['說明文字']"
-            @click:append-inner="visible = !visible"
-          ></v-text-field>
-          <div class="d-flex align-center mb-8">
-            <v-checkbox
-              v-model="checkbox"
-              :rules="[(v) => !!v || '']"
-              label="記住我？"
-              required
-              hide-details=""
-            ></v-checkbox>
-            <v-btn variant="text">忘記密碼</v-btn>
+  <div class="h-screen w-100 d-flex justify-center loginPage">
+    <div class="loginCard">
+      <v-sheet elevation="5" rounded="lg" class="mx-auto">
+        <div class="title">
+          <div class="img"><img src="~@/assets/images/h_logo.png" /></div>
+          <h2 class="my-3 text-center">文化部公共出借權登記使用者登入</h2>
+        </div>
+
+        <v-form>
+          <v-row class="formGrp">
+            <v-col>
+              <v-text-field
+                variant="outlined"
+                single-line
+                label="請輸入帳號"
+                type=""
+                density="compact"
+                prepend-inner-icon="mdi-account-outline"
+                hide-details="auto"
+              ></v-text-field>
+            </v-col>
+          </v-row>
+          <v-row class="formGrp">
+            <v-col>
+              <v-text-field
+                label=" 請輸入密碼"
+                single-line
+                variant="outlined"
+                density="compact"
+                hide-details="auto"
+                prepend-inner-icon="mdi-lock-outline"
+                @click:append-inner="visible = !visible"
+              ></v-text-field>
+            </v-col>
+          </v-row>
+          <!-- 驗證碼欄位 start -->
+          <v-row class="formGrp">
+            <v-col class="compactContent" cols="">
+              <v-text-field
+                variant="outlined"
+                label="請輸入驗證碼"
+                type="text"
+                hide-details="auto"
+                single-line
+                density="compact"
+              ></v-text-field>
+              <div class="">
+                <div class="img">
+                  <img src="~@/assets/images/captcha.gif" />
+                </div>
+                <v-btn class="iconBtn" elevation="0" color="transparent">
+                  <v-icon icon="mdi-refresh"></v-icon>
+                </v-btn>
+                <v-btn class="iconBtn" elevation="0" color="transparent">
+                  <v-icon icon="mdi-volume-high"></v-icon>
+                </v-btn>
+              </div>
+            </v-col>
+          </v-row>
+          <!-- 驗證碼欄位 end -->
+
+          <v-btn type="submit" block color="primary">登入</v-btn>
+          <div class="content">
+            <a class="linkText" href="">忘記密碼</a>
+            <p>
+              沒有帳號，立即
+              <a class="linkText" href="">註冊帳號</a>
+            </p>
           </div>
-          <v-btn type="submit" block color="primary" class="mt-2">登入</v-btn>
         </v-form>
-        <ul class="text-caption text-center mt-8">
-          <li>如有登入問題，請聯繫資訊科 王大明 分機123</li>
-          <li>電子郵件：abc@gmail.com</li>
-        </ul>
       </v-sheet>
     </div>
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data: () => ({
+    visible: false,
+    checkbox: false,
+    theme: "",
+    dark: false,
+  }),
+};
+</script>
