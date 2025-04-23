@@ -44,9 +44,19 @@
           </div>
         </td>
         <td>
-          <v-btn class="iconBtn" elevation="0" color="primary" rounded="md">
-            <v-icon icon="mdi-square-edit-outline"></v-icon>
-          </v-btn>
+          <div class="d-flex">
+            <v-btn
+              class="iconBtn mr-1"
+              elevation="0"
+              color="primary"
+              rounded="md"
+            >
+              <v-icon icon="mdi-square-edit-outline"></v-icon>
+            </v-btn>
+            <v-btn class="iconBtn" elevation="0" color="primary" rounded="md">
+              <v-icon icon="mdi-square-edit-outline"></v-icon>
+            </v-btn>
+          </div>
         </td>
       </tr>
       <tr>

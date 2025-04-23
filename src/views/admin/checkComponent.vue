@@ -226,6 +226,49 @@
                 <abbr class="necessary" title="為必填(選)欄位,不能為空白。"
                   >*
                 </abbr>
+                聯絡地址</label
+              >
+            </v-col>
+            <v-col cols="6" md="4" lg="2">
+              <v-select
+                variant="outlined"
+                density="compact"
+                label=""
+                class="h-100"
+                hide-details="auto"
+                :items="['選項ㄧ', '選項二', '選項三']"
+              ></v-select>
+            </v-col>
+            <v-col cols="6" md="4" lg="2">
+              <v-select
+                variant="outlined"
+                density="compact"
+                label=""
+                class="h-100"
+                hide-details="auto"
+                :items="['選項ㄧ', '選項二', '選項三']"
+              ></v-select>
+            </v-col>
+            <v-col cols="12" lg="6" class="py-0">
+              <v-checkbox label="同登記地址" hide-details="auto"></v-checkbox>
+            </v-col>
+            <v-col cols="2" class="d-none d-lg-block"></v-col>
+            <v-col class="ml-3 px-0">
+              <v-text-field
+                density="compact"
+                label="文字標準表單"
+                single-line
+                hide-details="auto"
+                variant="outlined"
+              ></v-text-field>
+            </v-col>
+          </v-row>
+          <v-row class="formGrp">
+            <v-col class="pb-0 d-flex justify-lg-end" cols="12" lg="2">
+              <label class="text-primary" for="">
+                <abbr class="necessary" title="為必填(選)欄位,不能為空白。"
+                  >*
+                </abbr>
                 聯絡電話</label
               >
             </v-col>
