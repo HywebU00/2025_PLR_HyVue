@@ -151,6 +151,7 @@ input:-internal-autofill-selected {
       height: 1.5rem;
       color: #000;
       font-weight: 600;
+      cursor: pointer;
       opacity: 1;
       &::after {
         position: absolute;

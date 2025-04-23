@@ -19,6 +19,10 @@ const routes = [
         component: () => import("@/views/admin/defaultComponent.vue"),
       },
       {
+        path: "loginCard",
+        component: () => import("@/views/admin/loginComponent.vue"),
+      },
+      {
         path: "check",
         component: () => import("@/views/admin/checkComponent.vue"),
       },

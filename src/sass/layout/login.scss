@@ -9,6 +9,27 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
     border-radius: 1rem !important;
   }
+  &.login {
+    .loginCard {
+      margin-top: 1rem;
+      width: 70%;
+      .v-field__prepend-inner {
+        i {
+          color: #000;
+          opacity: 1;
+        }
+      }
+      .v-field.v-field--prepended {
+        padding-left: 1.25rem;
+      }
+      .v-sheet {
+        padding-bottom: 5rem;
+      }
+      @include screen('notebook') {
+        width: 90%;
+      }
+    }
+  }
 }
 .loginCard {
   margin-top: 10%;
@@ -163,6 +184,14 @@
           margin: 0 0 0.5rem 0;
         }
       }
+    }
+  }
+}
+.v-col {
+  &:has(.loginPage) {
+    padding: 0;
+    .loginPage {
+      padding: 0;
     }
   }
 }
