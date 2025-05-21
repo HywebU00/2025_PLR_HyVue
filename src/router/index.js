@@ -15,6 +15,10 @@ const routes = [
         component: () => import("@/views/admin/Component.vue"),
       },
       {
+        path: "myindex",
+        component: () => import("@/views/admin/MyIndex2.vue"),
+      },
+      {
         path: "/",
         component: () => import("@/views/admin/defaultComponent.vue"),
       },
