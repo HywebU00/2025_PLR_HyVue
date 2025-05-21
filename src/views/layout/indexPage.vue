@@ -89,6 +89,11 @@ export default {
           link: "https://hywebu00.github.io/2025_PLR_HyVue/#/loginCard",
           note: "",
         },
+        {
+          name: "工程師新增頁面",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/myindex",
+          note: "新增className 已用 📌 標示在檔案中",
+        },
       ],
     };
   },
@@ -98,7 +103,7 @@ export default {
 <style lang="scss" scope>
 .index_bg {
   background: #e9ecef;
-  height: 100vh;
+  min-height: 100vh;
 }
 .index_container {
   padding-top: 5rem;

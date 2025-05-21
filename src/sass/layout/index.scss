@@ -1,0 +1,66 @@
+@use '@/sass/variables.scss' as *;
+@use '@/sass/common/mixins/mediaquery.scss' as *;
+@use '@/sass/common/mixins/text.scss' as *;
+
+.container {
+  &.index {
+    margin: 3rem auto;
+    h2 {
+      margin-top: 1rem;
+      + a {
+        margin-top: 1rem;
+        text-wrap: nowrap;
+      }
+    }
+
+    .infoGrp {
+      .v-card {
+        h3 {
+          &.text-h6 {
+            margin-bottom: 1.25rem !important;
+            border-bottom: 1px solid #ccc;
+            line-height: 2.5rem !important;
+          }
+          font-weight: bolder;
+        }
+        strong {
+          margin-right: 0.5rem;
+        }
+        .text-subtitle-1 {
+          font-weight: bolder;
+          + .text-h4 {
+            line-height: 5rem;
+            font-size: 3.5rem !important;
+          }
+        }
+      }
+    }
+    .registerGrp {
+      margin-top: 2rem;
+      .v-card {
+        display: flex !important;
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+        &:hover {
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        }
+        .v-card-title {
+          font-weight: bolder;
+          + div {
+            padding-top: 0.5rem;
+            flex-grow: 1;
+          }
+        }
+        .v-card-actions {
+          padding: 0.25rem 0;
+        }
+      }
+      .v-btn {
+        background: #333;
+        color: #fff !important;
+        min-height: rem(42);
+        margin-top: 2rem;
+      }
+    }
+  }
+}
