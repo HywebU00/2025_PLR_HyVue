@@ -397,6 +397,10 @@
                   </v-checkbox>
                   <a class="linkText" href="">個人資料蒐集處理利用</a>
                 </div>
+
+                <div class="textError">
+                  <p class="text">請閱讀個人資料搜集處理利用聲明</p>
+                </div>
               </div>
             </v-col>
           </v-row>
