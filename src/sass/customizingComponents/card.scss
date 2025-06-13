@@ -174,3 +174,20 @@
     }
   }
 }
+.SearchInfoContent {
+  &.v-card {
+    background: #ededeb;
+    padding: 1rem 0.75rem;
+    box-shadow: none;
+    ul {
+      margin-left: 1.5rem;
+      li {
+        &::marker {
+          color: #828282;
+        }
+        margin-bottom: 0.5rem;
+        list-style: disc;
+      }
+    }
+  }
+}

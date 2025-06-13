@@ -214,6 +214,19 @@
               </v-list-item>
             </template>
           </v-list-group>
+
+          <ul class="functionList__ul">
+            <li>
+              <router-link to=""> 城邦文化事業股份有限公司 </router-link>
+            </li>
+            <li>
+              <router-link to=""> 登記前台首頁</router-link>
+            </li>
+            <li>
+              <router-link to=""> 教學專區 </router-link>
+            </li>
+          </ul>
+
           <!-- 補償酬金調整管理 end -->
           <ul class="navlist">
             <li>
@@ -228,7 +241,13 @@
               </v-btn>
             </li>
           </ul>
+          <!-- 出版者切換 start -->
+          <v-btn-toggle class="mb_toggle" mandatory v-model="toggle_exclusive">
+            <v-btn variant="plain" block> 我是出版者 </v-btn>
+            <v-btn variant="plain" block> 我是創作者 </v-btn>
+          </v-btn-toggle>
         </v-list>
+        <!-- 出版者切換 end -->
       </v-navigation-drawer>
       <!-- 手機版 menu end  -->
       <pageView />
@@ -276,6 +295,7 @@ export default {
     open: ["Users"],
     theme: "default",
     themeDark: "false",
+    toggle_exclusive: 1,
     opened: ["案件管理"],
     overlay: false,
     isSmallScreen: window.innerWidth < 768,

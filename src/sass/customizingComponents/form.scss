@@ -185,6 +185,9 @@ input:-internal-autofill-selected {
 .showExpandCard {
   .v-container {
     padding: 2rem;
+    .formGrp {
+      padding: 0.25rem 0;
+    }
   }
 }
 .h3 {
