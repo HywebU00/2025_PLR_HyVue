@@ -177,9 +177,11 @@
 .SearchInfoContent {
   &.v-card {
     background: #ededeb;
-    padding: 1rem 0.75rem;
+
     box-shadow: none;
     ul {
+      padding: 1rem;
+      display: block;
       margin-left: 1.5rem;
       li {
         &::marker {
