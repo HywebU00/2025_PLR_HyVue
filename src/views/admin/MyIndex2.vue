@@ -37,6 +37,211 @@ const init = async () => {
   <!-- 📌 增加 index className -->
   <v-container class="container index">
     <page-bread :breadcrumbs="['首頁']" />
+
+    <v-row class="infoGrp processGrp">
+      <h2 class="">
+        <span>出版者登記流程</span>
+        <a href="#" class="link text-primary">>>詳情請參閱教學專區</a>
+      </h2>
+      <v-col cols="12" md="3">
+        <div class="stepTitle">Step1.新增出版品牌資料</div>
+        <div class="itemGrp">
+          <div class="title">
+            系統將依據所設定出版品牌帶入登記之書目，提供兩個方法：
+          </div>
+          <div class="">
+            <div class="item">
+              <v-card class="pa-4 d-flex flex-column justify-space-between">
+                <div class="content align-center">
+                  <div class="">
+                    <ul>
+                      <li><span>方法1:</span> 透過VAT系統帶入出版品牌資料</li>
+                      <li><span>方法2:</span> 自行新增出版品牌資料</li>
+                    </ul>
+                  </div>
+                </div>
+                <v-card-actions>
+                  <v-btn
+                    color="primary"
+                    block
+                    class="text-subtitle-1 font-weight-bold"
+                    >開始設定出版品牌</v-btn
+                  >
+                </v-card-actions>
+              </v-card>
+            </div>
+          </div>
+        </div>
+      </v-col>
+      <v-col cols="12" md="6">
+        <div class="stepTitle">Step2.完成作者委託認定</div>
+        <div class="itemGrp">
+          <div class="title">
+            出版社可於此處統一管理旗下作者資料，同一作者僅需匯入一次，系統將自動比對其創作書目，提供兩個方法：
+          </div>
+          <div class="d-flex">
+            <v-row>
+              <v-col>
+                <div class="item">
+                  <v-card class="pa-4 d-flex flex-column justify-space-between">
+                    <div class="content">
+                      <div class="">
+                        <div class="tag">方法一</div>
+                        <ul>
+                          <li>
+                            <span> 步驟1:</span>
+                            於「登記著作」頁面中匯出作者清單，並填入作者相關資料
+                          </li>
+                          <li>
+                            <span>步驟2:</span>
+                            於「作者委託管理」中，匯入作者名單，送出審核
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <v-card-actions>
+                      <v-btn
+                        color="primary"
+                        block
+                        class="text-subtitle-1 font-weight-bold"
+                        >開始設定</v-btn
+                      >
+                    </v-card-actions>
+                  </v-card>
+                </div></v-col
+              >
+              <v-col>
+                <div class="item">
+                  <v-card class="pa-4 d-flex flex-column justify-space-between">
+                    <div class="content">
+                      <div>
+                        <div class="tag">方法二</div>
+                        <ul>
+                          <li>
+                            <span> 步驟1:</span>
+                            於「作者委託管理中」新增單筆或批次新增多筆作者資料，並送出審核
+                          </li>
+                          <li>
+                            <span>步驟2:</span>
+                            於「作者委託管理」中，匯入作者名單，送出審核
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <v-card-actions>
+                      <v-btn
+                        color="primary"
+                        block
+                        class="text-subtitle-1 font-weight-bold"
+                        >開始設定</v-btn
+                      >
+                    </v-card-actions>
+                  </v-card>
+                </div>
+              </v-col>
+            </v-row>
+          </div>
+        </div>
+      </v-col>
+      <v-col cols="12" md="3">
+        <div class="stepTitle">Step3.完成登記著作</div>
+        <div class="itemGrp">
+          <div class="title">
+            目前系統已依據您新增的出版品牌及作者委託認定資料，自動比對可登記之書目清單。
+          </div>
+          <div class="">
+            <div class="item">
+              <v-card
+                class="pa-4 h-100 d-flex flex-column justify-space-between"
+              >
+                <div class="content align-center">
+                  <div class="text-center">
+                    請勾選欲登記之書目後， 即可完成書目登記！
+                  </div>
+                </div>
+                <v-card-actions>
+                  <v-btn block class="text-subtitle-1 font-weight-bold loginBtn"
+                    >進入登記著作</v-btn
+                  >
+                </v-card-actions>
+              </v-card>
+            </div>
+          </div>
+        </div>
+      </v-col>
+
+      <!-- 第一row -->
+      <!--📌  cols有調整 -->
+      <v-col cols="12" md="6">
+        <v-card class="pa-4">
+          <h3 class="text-h6 mb-2">帳號摘要資訊區塊</h3>
+          <div class="mb-2">
+            <strong>帳號身分：</strong> {{ memberData.role }}
+          </div>
+          <div>
+            <strong>帳號驗證：</strong>
+            <v-chip color="green" dark size="small">{{
+              memberData.accountStatus
+            }}</v-chip>
+          </div>
+        </v-card>
+      </v-col>
+
+      <!-- 右欄：補償金資訊摘要 -->
+      <!--📌  cols有調整 -->
+      <v-col cols="12" md="6">
+        <v-card class="pa-4">
+          <h3 class="text-h6 mb-2">補償酬金資訊摘要</h3>
+          <div class="mb-2">
+            <strong>當期結算金額：</strong> {{ memberData.settlementAmount }}
+          </div>
+          <div>
+            <strong>發放狀態：</strong>
+            <v-chip color="blue" dark size="small">{{
+              memberData.paymentStatus
+            }}</v-chip>
+          </div>
+        </v-card>
+      </v-col>
+
+      <!-- 第二row -->
+      <v-col cols="12">
+        <v-card class="pa-4">
+          <h3 class="text-h6 mb-2">登記作品資訊摘要</h3>
+          <v-row>
+            <!--📌  cols有調整 -->
+            <v-col cols="12" md="6" lg="3" class="text-center">
+              <div class="text-subtitle-1">已提交數量</div>
+              <div class="text-h4 font-weight-bold">
+                <router-link to=""> {{ memberData.isbnProposed }}</router-link>
+              </div>
+            </v-col>
+            <v-col cols="12" md="6" lg="3" class="text-center">
+              <div class="text-subtitle-1">已審核數量</div>
+              <div class="text-h4 font-weight-bold">
+                <router-link to=""> {{ memberData.isbnApproved }}</router-link>
+              </div>
+            </v-col>
+            <v-col cols="12" md="6" lg="3" class="text-center">
+              <div class="text-subtitle-1">待審核數量</div>
+              <div class="text-h4 font-weight-bold">
+                <router-link to="">
+                  {{ memberData.isbnWaitApproval }}</router-link
+                >
+              </div>
+            </v-col>
+            <v-col cols="12" md="6" lg="3" class="text-center">
+              <div class="text-subtitle-1">暫存清單數量</div>
+              <div class="text-h4 font-weight-bold">
+                <router-link to=""> {{ memberData.isbnTempSaved }}</router-link>
+              </div>
+            </v-col>
+            <!-- cols有調整 -->
+          </v-row>
+        </v-card>
+      </v-col>
+    </v-row>
+
     <!-- 📌 增加i nfoGrp className -->
     <v-row class="infoGrp">
       <h2 class=""><span>我的首頁</span></h2>

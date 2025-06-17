@@ -31,11 +31,16 @@
           + .text-h4 {
             line-height: 5rem;
             font-size: 3.5rem !important;
+            a {
+              color: #333;
+              cursor: pointer;
+            }
           }
         }
       }
     }
-    .registerGrp {
+    .registerGrp,
+    .processGrp {
       margin-top: 2rem;
       .v-card {
         display: flex !important;
@@ -60,6 +65,98 @@
         color: #fff !important;
         min-height: rem(42);
         margin-top: 2rem;
+      }
+    }
+    .processGrp {
+      h2 {
+        .link {
+          font-size: 1.2rem;
+        }
+        &:after {
+          width: calc(100% - 28rem);
+          right: 0;
+          left: unset;
+        }
+      }
+
+      .stepTitle {
+        font-size: 1.25rem;
+        font-weight: bolder;
+        margin-bottom: 1rem;
+        text-align: center;
+      }
+      .v-card {
+        height: 100%;
+      }
+      .item {
+        height: 100%;
+
+        &:last-child {
+          margin-right: 0;
+        }
+        .content {
+          flex-grow: 1;
+          display: flex;
+          .tag {
+            background: #ececec;
+            font-size: 1rem;
+            text-align: center;
+            padding: 0.3rem;
+            margin-bottom: 1rem;
+            border-radius: 0.25rem;
+            font-weight: bolder;
+            color: #626060;
+          }
+          ul {
+            li {
+              margin-bottom: 1rem;
+              span {
+                font-size: 1.05rem;
+                display: block;
+                margin-bottom: 0.5rem;
+                font-weight: bold;
+              }
+            }
+          }
+        }
+        .loginBtn {
+          background: $colorSecondary;
+          color: #333 !important;
+        }
+      }
+      .title {
+        width: 100%;
+        margin-bottom: 1rem;
+        text-align: center;
+        min-height: rem(65);
+        + div {
+          flex-grow: 1;
+          height: calc(100% - 76px);
+        }
+      }
+      .itemGrp {
+        background: #e8e8e8;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        height: calc(100% - 32px);
+      }
+      .v-btn {
+        margin-top: unset;
+      }
+      @include screen('tablet') {
+        h2 {
+          .link {
+            display: block;
+            margin-top: 0.5rem;
+          }
+          &:after {
+            width: calc(100% - 8rem);
+          }
+        }
+        .title {
+          display: flex;
+          align-items: center;
+        }
       }
     }
   }
