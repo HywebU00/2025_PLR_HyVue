@@ -165,5 +165,14 @@
         }
       }
     }
+    .v-card {
+      .v-row {
+        div[class^='v-col'] {
+          &:has(.text-subtitle-1) {
+            cursor: pointer;
+          }
+        }
+      }
+    }
   }
 }
