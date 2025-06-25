@@ -333,13 +333,15 @@ const init = async () => {
             <v-col cols="12" md="4" class="text-center">
               <div class="text-subtitle-1">已審核數量</div>
               <div class="text-h4 font-weight-bold">
-                {{ memberData.creatorAuth_approved }}
+                403988
+                <!-- {{ memberData.creatorAuth_approved }} -->
               </div>
             </v-col>
             <v-col cols="12" md="4" class="text-center">
               <div class="text-subtitle-1">待審核數量</div>
               <div class="text-h4 font-weight-bold">
-                {{ memberData.creatorAuth_waitApproval }}
+                403988
+                <!-- {{ memberData.creatorAuth_waitApproval }} -->
               </div>
             </v-col>
           </v-row>

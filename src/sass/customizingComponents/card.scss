@@ -176,13 +176,31 @@
 }
 .SearchInfoContent {
   &.v-card {
+    padding: 1rem;
     background: #ededeb;
 
     box-shadow: none;
+    p {
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    div {
+      margin-left: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .title {
+      font-weight: 700;
+    }
+    ol {
+      padding: 0 1rem;
+      margin-left: 1.5rem;
+      margin-bottom: 1rem;
+    }
     ul {
-      padding: 1rem;
+      padding: 0 1rem;
       display: block;
       margin-left: 1.5rem;
+      margin-bottom: 1rem;
       li {
         &::marker {
           color: #828282;
