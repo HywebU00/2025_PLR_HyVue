@@ -32,7 +32,7 @@
                   <td>
                     <a :href="item.link">{{ item.link }}</a>
                   </td>
-                  <td>{{ item.note }}</td>
+                  <td v-html="item.note"></td>
                 </tr>
               </tbody>
             </v-table>
@@ -93,6 +93,16 @@ export default {
           name: "工程師新增頁面",
           link: "https://hywebu00.github.io/2025_PLR_HyVue/#/myindex",
           note: "新增className 已用 📌 標示在檔案中",
+        },
+        {
+          name: "入口元件頁面",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/indexCard",
+          note: "",
+        },
+        {
+          name: "出版者創作者資訊頁面",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/tab",
+          note: "📌補償酬金比例 視窗 在[審核紀錄]>[委託審核]>[操作]的第一個按鈕視窗 <br>📌補償酬金tab下有table樣式",
         },
       ],
     };

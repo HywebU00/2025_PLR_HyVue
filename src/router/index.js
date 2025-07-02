@@ -19,6 +19,14 @@ const routes = [
         component: () => import("@/views/admin/MyIndex2.vue"),
       },
       {
+        path: "indexCard",
+        component: () => import("@/views/admin/indexCard.vue"),
+      },
+      {
+        path: "tab",
+        component: () => import("@/views/admin/tabComponent.vue"),
+      },
+      {
         path: "/",
         component: () => import("@/views/admin/defaultComponent.vue"),
       },

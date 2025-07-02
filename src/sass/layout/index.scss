@@ -175,4 +175,84 @@
       }
     }
   }
+  &.indexCard {
+    h2 {
+      display: block;
+    }
+    .cardGrp {
+      margin: 2rem auto;
+      margin-bottom: 5rem;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      width: calc((100% / 6) - 1rem);
+      margin: 0.5rem;
+    }
+    .v-card {
+      padding: 0.5rem;
+      border-radius: 1rem;
+      text-align: center;
+      .v-card-title {
+        color: $dark;
+        margin-top: 1rem;
+        span {
+          display: block;
+          font-weight: 700;
+        }
+        .v-icon {
+          margin-top: 1rem;
+          font-size: 2rem;
+          color: $gray3;
+          margin-bottom: 0.25rem;
+        }
+      }
+      .content {
+        display: flex;
+        justify-content: center;
+        font-size: 2.2rem;
+        font-weight: 700;
+        color: #d14b1a;
+        padding: 1rem 0 3rem 0;
+      }
+      .v-card-actions {
+        display: flex;
+        color: $dark;
+        justify-content: center;
+        font-size: 1rem;
+        div {
+          background: #ececec;
+          border-radius: 0.5rem;
+          transition: all 0.5s;
+          display: block;
+          width: 100%;
+          padding: 0.5rem;
+        }
+      }
+      &:hover {
+        background: #ececec;
+        .v-card-actions {
+          > div {
+            transition: all 0.5s;
+            background: #d1d1d1;
+          }
+        }
+      }
+    }
+    @media (max-width: 1280px) {
+      .card {
+        width: calc((100% / 3) - 1rem);
+      }
+    }
+    @media (max-width: 767px) {
+      .card {
+        width: calc((100% / 2) - 1rem);
+      }
+    }
+    @media (max-width: 575px) {
+      .card {
+        width: calc(100% - 1rem);
+      }
+    }
+  }
 }

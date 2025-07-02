@@ -65,3 +65,53 @@
     }
   }
 }
+.tabBtnGrp {
+  .v-tab {
+    font-size: 1rem;
+    &.v-tab--selected {
+      .v-btn__content {
+        color: #fff;
+
+        .v-tab__slider {
+          height: 100%;
+          z-index: -1;
+          background-color: #3a3a3a;
+        }
+      }
+    }
+  }
+}
+.table {
+  thead {
+    font-size: 1rem;
+  }
+
+  tbody {
+    font-size: 1rem;
+  }
+}
+
+.tabGrp {
+  .v-tab {
+    font-size: 1rem;
+    &.v-tab--selected {
+      background: #ececec;
+      .v-tab__slider {
+        height: 2px;
+      }
+    }
+  }
+}
+.linkList {
+  margin-top: 1rem;
+  li {
+    margin-bottom: 0.5rem;
+  }
+  a {
+    color: $gray2;
+    text-decoration: underline;
+    &:hover {
+      color: #000;
+    }
+  }
+}
