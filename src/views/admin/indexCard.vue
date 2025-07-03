@@ -9,7 +9,7 @@
       <v-col>
         <v-container class="d-flex cardGrp">
           <!-- 註冊 start -->
-          <router-link class="card">
+          <router-link class="card" to="">
             <v-card>
               <v-card-title>
                 <v-icon icon="mdi:mdi-pencil-box-multiple-outline" /><span
@@ -26,7 +26,7 @@
           </router-link>
           <!-- 註冊 end -->
           <!-- 委託 start -->
-          <router-link class="card">
+          <router-link class="card" to="">
             <v-card>
               <v-card-title>
                 <v-icon icon="mdi:mdi-account-file-outline" />
@@ -42,7 +42,7 @@
           </router-link>
           <!-- 委託 end -->
           <!-- 出版品牌 start -->
-          <router-link class="card">
+          <router-link class="card" to="">
             <v-card>
               <v-card-title>
                 <v-icon icon="mdi:mdi-book-open-variant-outline" />
@@ -58,7 +58,7 @@
           </router-link>
           <!-- 出版品牌 end -->
           <!-- 著作人名 start -->
-          <router-link class="card">
+          <router-link class="card" to="">
             <v-card>
               <v-card-title>
                 <v-icon icon="mdi:mdi-account-edit-outline" />
@@ -74,7 +74,7 @@
           </router-link>
           <!-- 著作人名  end  -->
           <!-- 登記 start -->
-          <router-link class="card">
+          <router-link class="card" to="">
             <v-card>
               <v-card-title>
                 <v-icon icon="mdi:mdi-note-edit-outline" />
@@ -90,7 +90,7 @@
           </router-link>
           <!-- 登記 end -->
           <!-- 補償酬金比例 start -->
-          <router-link class="card">
+          <router-link class="card" to="">
             <v-card>
               <v-card-title>
                 <v-icon icon="mdi:mdi-cash-multiple" />
