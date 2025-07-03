@@ -30,7 +30,7 @@
             <v-card>
               <v-card-title>
                 <v-icon icon="mdi:mdi-account-file-outline" />
-                <span>委託</span>
+                <span>作者委託</span>
               </v-card-title>
               <div class="content">
                 <div>3</div>
@@ -73,22 +73,6 @@
             </v-card>
           </router-link>
           <!-- 著作人名  end  -->
-          <!-- 登記 start -->
-          <router-link class="card" to="">
-            <v-card>
-              <v-card-title>
-                <v-icon icon="mdi:mdi-note-edit-outline" />
-                <span> 登記 </span></v-card-title
-              >
-              <div class="content">
-                <div>3</div>
-              </div>
-              <v-card-actions>
-                <div class="">待審核</div>
-              </v-card-actions>
-            </v-card>
-          </router-link>
-          <!-- 登記 end -->
           <!-- 補償酬金比例 start -->
           <router-link class="card" to="">
             <v-card>
@@ -105,6 +89,54 @@
             </v-card>
           </router-link>
           <!-- 補償酬金比例 end -->
+          <!-- 補充著作人名 start -->
+          <router-link class="card" to="">
+            <v-card>
+              <v-card-title>
+                <v-icon icon="mdi:mdi-note-edit-outline" />
+                <span> 補充著作人名 </span></v-card-title
+              >
+              <div class="content">
+                <div>3</div>
+              </div>
+              <v-card-actions>
+                <div class="">待審核</div>
+              </v-card-actions>
+            </v-card>
+          </router-link>
+          <!-- 補充著作人名 end -->
+          <!-- 註冊資料變更 start -->
+          <router-link class="card" to="">
+            <v-card>
+              <v-card-title>
+                <v-icon icon="mdi:mdi-file-document-outline" />
+                <span> 註冊資料變更</span>
+              </v-card-title>
+              <div class="content">
+                <div>3</div>
+              </div>
+              <v-card-actions>
+                <div class="">待審核</div>
+              </v-card-actions>
+            </v-card>
+          </router-link>
+          <!-- 註冊資料變更 end -->
+          <!-- 停用申請 start -->
+          <router-link class="card" to="">
+            <v-card>
+              <v-card-title>
+                <v-icon icon="mdi:mdi-account-cancel-outline" />
+                <span> 停用申請</span>
+              </v-card-title>
+              <div class="content">
+                <div>3</div>
+              </div>
+              <v-card-actions>
+                <div class="">待審核</div>
+              </v-card-actions>
+            </v-card>
+          </router-link>
+          <!-- 停用申請 end -->
         </v-container>
       </v-col>
     </v-row>
