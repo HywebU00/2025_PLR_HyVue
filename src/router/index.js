@@ -19,7 +19,7 @@ const routes = [
         component: () => import("@/views/admin/MyIndex2.vue"),
       },
       {
-        path: "indexCard",
+        path: "indexcard",
         component: () => import("@/views/admin/indexCard.vue"),
       },
       {

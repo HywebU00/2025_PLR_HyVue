@@ -96,7 +96,7 @@ export default {
         },
         {
           name: "入口元件頁面",
-          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/indexCard",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/indexcard",
           note: "",
         },
         {
