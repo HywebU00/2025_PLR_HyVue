@@ -544,6 +544,7 @@
                                                                   variant="outlined"
                                                                   value="35%"
                                                                   type="text"
+                                                                  disabled
                                                                   hide-details="auto"
                                                                   single-line
                                                                   class="mr-md-0 mr-1"
@@ -599,6 +600,7 @@
                                                                 class="compactContent"
                                                               >
                                                                 <v-text-field
+                                                                  disabled
                                                                   variant="outlined"
                                                                   value="35%"
                                                                   type="text"
@@ -625,6 +627,75 @@
                                                                 </tr>
                                                               </thead>
                                                               <tbody>
+                                                                <tr class="">
+                                                                  <td
+                                                                    class="d-flex"
+                                                                  >
+                                                                    <div
+                                                                      class="symbol"
+                                                                    >
+                                                                      <v-icon
+                                                                        icon="mdi-close"
+                                                                      ></v-icon>
+                                                                    </div>
+
+                                                                    <div
+                                                                      class="title"
+                                                                    >
+                                                                      王艾咪
+                                                                    </div>
+                                                                    <div
+                                                                      class="d-flex"
+                                                                    >
+                                                                      <v-text-field
+                                                                        variant="outlined"
+                                                                        value="35"
+                                                                        hide-details="auto"
+                                                                        single-line
+                                                                        density="compact"
+                                                                      ></v-text-field>
+                                                                      <div
+                                                                        class="symbol"
+                                                                      >
+                                                                        <span
+                                                                          >%</span
+                                                                        >
+                                                                      </div>
+                                                                    </div>
+                                                                  </td>
+                                                                  <td>
+                                                                    <div
+                                                                      class="d-flex"
+                                                                    >
+                                                                      <div
+                                                                        class="symbol"
+                                                                      >
+                                                                        <span
+                                                                          >=</span
+                                                                        >
+                                                                      </div>
+                                                                      <div
+                                                                        class="d-flex w-100"
+                                                                      >
+                                                                        <v-text-field
+                                                                          variant="outlined"
+                                                                          disabled
+                                                                          value="35"
+                                                                          hide-details="auto"
+                                                                          single-line
+                                                                          density="compact"
+                                                                        ></v-text-field>
+                                                                        <div
+                                                                          class="symbol"
+                                                                        >
+                                                                          <span
+                                                                            >%</span
+                                                                          >
+                                                                        </div>
+                                                                      </div>
+                                                                    </div>
+                                                                  </td>
+                                                                </tr>
                                                                 <tr
                                                                   v-for="i in 3"
                                                                   :key="i"
@@ -680,6 +751,7 @@
                                                                       >
                                                                         <v-text-field
                                                                           variant="outlined"
+                                                                          disabled
                                                                           value="35"
                                                                           hide-details="auto"
                                                                           single-line
@@ -734,6 +806,7 @@
                                                                   variant="outlined"
                                                                   value="35%"
                                                                   type="text"
+                                                                  disabled
                                                                   hide-details="auto"
                                                                   single-line
                                                                   class="mr-md-0 mr-1"
@@ -812,6 +885,7 @@
                                                                       >
                                                                         <v-text-field
                                                                           variant="outlined"
+                                                                          disabled
                                                                           value="35"
                                                                           hide-details="auto"
                                                                           single-line

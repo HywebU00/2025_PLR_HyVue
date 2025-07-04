@@ -404,6 +404,13 @@ select[multiple] option:checked {
         border: none;
       }
     }
+    .v-input {
+      &.v-input--disabled {
+        .v-input__control {
+          background-color: #b4b4b45e;
+        }
+      }
+    }
   }
   .itemtable {
     overflow-x: auto;
