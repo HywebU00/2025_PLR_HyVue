@@ -7,9 +7,17 @@ table {
   thead {
     white-space: nowrap;
     .v-data-table__td {
-      background: #dadfe0;
+      background: #626060; //#dadfe0;
+      color: #fff;
+      font-size: rem(16);
+      &:hover {
+        color: #fff;
+      }
     }
   }
+}
+.v-table > .v-table__wrapper > table {
+  font-size: rem(16);
 }
 .pagination {
   margin-top: 2rem;

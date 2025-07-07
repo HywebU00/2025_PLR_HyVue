@@ -47,3 +47,8 @@
     }
   }
 }
+.v-data-table .v-table__wrapper > table > thead > tr > th.v-data-table__th--sortable {
+  &:hover {
+    color: #fff !important;
+  }
+}

@@ -940,234 +940,7 @@
                     <v-window-item value="2">
                       <v-row class="mt-2">
                         <v-col>
-                          <v-table class="table">
-                            <thead class="bg-thead">
-                              <tr>
-                                <th class="text-center">序號</th>
-                                <th class="text-center">送審時間</th>
-                                <th class="text-center">委託人名稱</th>
-                                <th class="text-center">審核狀態</th>
-                                <th class="text-center">審核人員</th>
-                                <th class="text-center">審核時間</th>
-                                <th class="text-center">操作</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr v-for="item in data" :key="item.name">
-                                <td class="text-center">{{ item.id }}</td>
-                                <td class="text-center">{{ item.date }}</td>
-                                <td class="text-center">{{ item.name }}</td>
-                                <td class="text-center">
-                                  <template v-if="item.status == true">
-                                    <v-chip label color="primary"
-                                      >待審核</v-chip
-                                    >
-                                    <!-- <v-chip label color="yellow-darken-4"
-                                        >已驗證</v-chip
-                                      >
-                                      <v-chip label color="deep-orange-darken-2"
-                                        >未通過</v-chip
-                                      > -->
-                                  </template>
-                                </td>
-                                <td class="text-center">{{ item.title }}</td>
-                                <td class="text-center">{{ item.time }}</td>
-                                <td class="text-center">
-                                  <div class="btnGroup d-flex justify-center">
-                                    <v-dialog scrollable maxWidth="900">
-                                      <template
-                                        v-slot:activator="{
-                                          props: activatorProps,
-                                        }"
-                                      >
-                                        <v-btn
-                                          class="iconBtn"
-                                          elevation="0"
-                                          v-bind="activatorProps"
-                                          color="primary"
-                                          rounded="md"
-                                        >
-                                          <v-icon
-                                            icon="mdi-square-edit-outline"
-                                          ></v-icon>
-                                        </v-btn>
-                                      </template>
-
-                                      <template v-slot:default="{ isActive }">
-                                        <v-form>
-                                          <v-card title="委託審核">
-                                            <v-card-text>
-                                              <v-container>
-                                                <v-row class="formGrp">
-                                                  <v-col
-                                                    class="pb-0 d-flex justify-lg-end"
-                                                    cols="12"
-                                                    lg="2"
-                                                  >
-                                                    <label
-                                                      class="text-primary"
-                                                      for=""
-                                                    >
-                                                      委託人證號
-                                                    </label>
-                                                  </v-col>
-                                                  <v-col>
-                                                    <v-text-field
-                                                      variant="outlined"
-                                                      single-line
-                                                      label=""
-                                                      density="compact"
-                                                      hide-details="auto"
-                                                    ></v-text-field>
-                                                  </v-col>
-                                                </v-row>
-                                                <v-row class="formGrp">
-                                                  <v-col
-                                                    class="pb-0 d-flex justify-lg-end"
-                                                    cols="12"
-                                                    lg="2"
-                                                  >
-                                                    <label
-                                                      class="text-primary"
-                                                      for=""
-                                                    >
-                                                      委託人名稱
-                                                    </label>
-                                                  </v-col>
-                                                  <v-col>
-                                                    <v-text-field
-                                                      variant="outlined"
-                                                      single-line
-                                                      label="密碼表單"
-                                                      type="password"
-                                                      hide-details="auto"
-                                                      density="compact"
-                                                    ></v-text-field>
-                                                  </v-col>
-                                                </v-row>
-
-                                                <!-- 驗證碼欄位 start -->
-                                                <v-row class="formGrp">
-                                                  <v-col
-                                                    class="pb-0 d-flex justify-lg-end"
-                                                    cols="12"
-                                                    lg="2"
-                                                  >
-                                                    <label
-                                                      class="text-primary"
-                                                      for=""
-                                                    >
-                                                      委託人匯款帳戶</label
-                                                    >
-                                                  </v-col>
-                                                  <v-col cols="">
-                                                    <div class="compactContent">
-                                                      <v-select
-                                                        variant="outlined"
-                                                        label="請輸入驗證碼"
-                                                        type="text"
-                                                        hide-details="auto"
-                                                        single-line
-                                                        density="compact"
-                                                        class="mr-1"
-                                                        :items="[
-                                                          '選擇1',
-                                                          '選擇2',
-                                                          '選擇3',
-                                                        ]"
-                                                      >
-                                                      </v-select
-                                                      ><v-select
-                                                        variant="outlined"
-                                                        label="請輸入驗證碼"
-                                                        type="text"
-                                                        hide-details="auto"
-                                                        single-line
-                                                        density="compact"
-                                                        class="mr-1"
-                                                        :items="[
-                                                          '選擇1',
-                                                          '選擇2',
-                                                          '選擇3',
-                                                        ]"
-                                                      >
-                                                      </v-select>
-                                                      <v-text-field
-                                                        variant="outlined"
-                                                        label="請輸入驗證碼"
-                                                        type="text"
-                                                        hide-details="auto"
-                                                        single-line
-                                                        class="mr-md-0 mr-1"
-                                                        density="compact"
-                                                      ></v-text-field>
-                                                    </div>
-                                                    <div class="d-block mt-1">
-                                                      <ul class="linkList">
-                                                        <li>
-                                                          <router-link
-                                                            >這是委託具結書的檔名點擊另開視窗呈現.pdf</router-link
-                                                          >
-                                                        </li>
-                                                        <li>
-                                                          <router-link
-                                                            >這是委託具結書的檔名點擊另開視窗呈現.pdf</router-link
-                                                          >
-                                                        </li>
-                                                      </ul>
-                                                    </div>
-                                                  </v-col>
-                                                </v-row>
-                                                <!-- 驗證碼欄位 end -->
-                                                <!-- 通知欄位 start -->
-                                                <v-row class="formGrp">
-                                                  <v-col
-                                                    class="pb-0 d-flex justify-lg-end"
-                                                    cols="12"
-                                                    lg="2"
-                                                  >
-                                                    <label
-                                                      class="text-primary"
-                                                      for=""
-                                                    >
-                                                      通知（退回者必填）</label
-                                                    >
-                                                  </v-col>
-                                                  <v-col class="">
-                                                    <v-textarea
-                                                      variant="outlined"
-                                                      label="請輸入驗證碼"
-                                                      type="text"
-                                                      hide-details="auto"
-                                                      single-line
-                                                      density="compact"
-                                                    ></v-textarea>
-                                                  </v-col>
-                                                </v-row>
-
-                                                <!-- 通知欄位 end -->
-                                              </v-container>
-                                            </v-card-text>
-                                            <v-card-actions
-                                              class="d-flex justify-center"
-                                            >
-                                              <v-btn
-                                                text="關閉"
-                                                variant="flat"
-                                                @click="isActive.value = false"
-                                                size="x-large"
-                                                class="bg-primary btn elevation-0 mx-2"
-                                              ></v-btn>
-                                            </v-card-actions>
-                                          </v-card>
-                                        </v-form>
-                                      </template>
-                                    </v-dialog>
-                                  </div>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </v-table>
+                          <dataTable />
                         </v-col> </v-row
                     ></v-window-item>
                     <v-window-item value="3">
@@ -1973,6 +1746,7 @@
 </template>
 
 <script>
+import dataTable from "@/components/dataTable.vue";
 export default {
   data: () => ({
     tab: null,
@@ -2031,7 +1805,9 @@ export default {
   }),
   methods: {},
   mounted() {},
-  components: {},
+  components: {
+    dataTable,
+  },
 };
 </script>
 <style></style>

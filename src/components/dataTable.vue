@@ -12,23 +12,25 @@
         <td class="">{{ item.title }}</td>
         <td>
           <div class="btnGroup d-flex">
-            <v-btn elevation="0" color="primary" size="small" class="mr-1"
-              >刪除</v-btn
-            >
-            <v-btn elevation="0" color="primary" variant="outlined" size="small"
-              >新增</v-btn
-            >
+            <v-btn elevation="0" color="primary" class="mr-1">刪除</v-btn>
+            <v-btn elevation="0" color="primary" variant="outlined">新增</v-btn>
           </div>
         </td>
         <td class="d-flex justify-center align-center">
           <v-menu transition="slide-y-transition">
             <template v-slot:activator="{ props }">
-              <v-btn icon="mdi-cog" class="ma-2" v-bind="props" size="x-small">
+              <v-btn
+                v-bind="props"
+                class="iconBtn ma-2"
+                elevation="0"
+                color="primary"
+                rounded="md"
+              >
+                <v-icon icon="mdi-square-edit-outline"></v-icon>
               </v-btn>
             </template>
             <v-card class="pa-2">
               <v-btn
-                size="small"
                 variant="outlined"
                 class="my-1"
                 block
@@ -37,7 +39,6 @@
                 >刪除</v-btn
               >
               <v-btn
-                size="small"
                 variant="outlined"
                 class="my-1"
                 block
