@@ -78,6 +78,8 @@
         <v-btn variant="plain"> 登記著作 </v-btn>
         <v-btn variant="plain"> 補償金查詢 </v-btn>
         <v-btn variant="plain"> 補償酬金調整管理 </v-btn>
+        <v-btn variant="plain"> 補償酬金調查 </v-btn>
+        <v-btn variant="plain"> 暫緩登記清單 </v-btn>
       </div>
     </v-app-bar>
     <!-- 桌機版 menu end  -->
