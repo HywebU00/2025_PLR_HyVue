@@ -9,6 +9,10 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
     border-radius: 1rem !important;
   }
+  &.login.h-screen {
+    height: auto !important;
+    margin-bottom: 2rem;
+  }
   &.login {
     .loginCard {
       margin-top: 1rem;
