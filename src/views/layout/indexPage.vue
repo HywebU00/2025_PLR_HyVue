@@ -100,6 +100,11 @@ export default {
           note: "",
         },
         {
+          name: "維護頁面",
+          link: "https://hywebu00.github.io/2025_PLR_HyVue/#/empty",
+          note: "",
+        },
+        {
           name: "出版者創作者資訊頁面",
           link: "https://hywebu00.github.io/2025_PLR_HyVue/#/tab",
           note: "📌補償酬金比例 視窗 在[審核紀錄]>[委託審核]>[操作]的第一個按鈕視窗 <br>📌補償酬金tab下有table樣式",
