@@ -270,9 +270,7 @@
           <v-list-item
             title="國立公共資訊圖書館版權所有 © 2020 All Rights Reserved."
           ></v-list-item>
-          <v-list-item
-            title="諮詢電話：(04)2262-5100轉1402、1413"
-          ></v-list-item>
+          <v-list-item title="諮詢電話：(03)560-1325"></v-list-item>
           <v-list-item title="諮詢信箱：plrservice@nlpi.edu.tw"></v-list-item>
           <v-list-item
             title="建議瀏覽器：Microsoft Edge、Firefox、Chrome(螢幕設定最佳顯示效果為1280*1024)"

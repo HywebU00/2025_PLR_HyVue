@@ -6,8 +6,9 @@
     <div class="img">
       <img src="~@/assets/images/error.svg" alt="" />
     </div>
-    <h1>Sorry</h1>
-    <h2>抱歉！<br />系統維護中！</h2>
+    <h1>抱歉！系統維護中！</h1>
+    <!-- <h2>系統維護中！</h2> -->
+    <!-- <h2>抱歉！<br />系統維護中！</h2> -->
     <div class="error">
       <h3>
         網站正在進行維護，暫停服務。<br />
@@ -16,7 +17,7 @@
       </h3>
       <div class="">
         <ul>
-          <li>諮詢電話：(04)2262-5100轉1402、1413</li>
+          <li>諮詢電話：(03)560-1325</li>
           <li>諮詢信箱：plrservice@hyweb.com.tw</li>
         </ul>
       </div>
@@ -57,13 +58,12 @@
   margin-top: 2em;
 }
 .wrapper h1 {
-  font-size: 5.25em;
+  font-size: 2.5em;
   display: block;
   line-height: normal;
-  float: left;
-  width: 50%;
-  text-align: right;
-  margin: 10px 30px 15px 0;
+
+  text-align: center;
+  margin: 10px 0px 15px 0;
   font-family: sans-serif;
 }
 .wrapper h2 {
@@ -103,9 +103,10 @@
     float: none;
     margin: 10px 0 5px;
     line-height: 1;
+    margin-top: 1.5em;
     text-align: center;
     width: 100%;
-    font-size: 5em;
+    font-size: 2em;
   }
   .wrapper h2 {
     clear: both;
